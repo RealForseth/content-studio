@@ -68,38 +68,34 @@ Requirements:
 - BPM range: {bpm_range}
 
 Search for:
-1. Trending royalty-free music on Epidemic Sound, Artlist, or similar
-2. Trending sounds on {platform} right now that match this vibe
-3. Specific track names and artists if possible
-4. Free alternatives on YouTube Audio Library or Pixabay Music
+1. Trending songs/sounds on {platform} RIGHT NOW that match this vibe
+2. Popular background music for short form content creators
+3. Trending audio clips being used in reels/TikToks this week/month
+4. Songs that match the energy, mood, and BPM described
 
-Give me 5 specific track recommendations with:
+Give me 5 specific recommendations with:
 - Track name + artist
-- Where to find it (URL if possible)
+- YouTube link to the song (IMPORTANT — we download from YouTube)
 - Why it matches the vibe
 - BPM and genre
+- Is it currently trending on {platform}?
 """}]
     }, timeout=60)
 ```
 
-### Step 4: Download the Track
+### Step 4: Download the Track from YouTube
 
-Try these sources in order:
+Download the recommended track as MP3 from YouTube:
 
-**Option A: YouTube Audio Library (free)**
 ```bash
-# Search and download from YouTube
-yt-dlp --extract-audio --audio-format mp3 -o "music.mp3" "YOUTUBE_URL"
+# Download audio only as MP3 from YouTube link
+# Use WARP proxy if on VPS
+ALL_PROXY=socks5://127.0.0.1:40000 yt-dlp --js-runtimes deno \
+  --extract-audio --audio-format mp3 --audio-quality 0 \
+  -o "music.%(ext)s" "YOUTUBE_URL"
 ```
 
-**Option B: Pixabay Music (free, no attribution)**
-```bash
-# Download from Pixabay
-curl -L -o music.mp3 "PIXABAY_DOWNLOAD_URL"
-```
-
-**Option C: Generate with AI (if no good match found)**
-Use an AI music generation API if available, or suggest the user find a specific track.
+If the first recommendation doesn't work, try the next one from the list. Always download as MP3.
 
 ### Step 5: Mix Audio
 
