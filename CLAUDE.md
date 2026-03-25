@@ -7,8 +7,7 @@ Two YouTube channels: Professional (AI/tech tutorials) + Personal brand (vlogs).
 ## What's Here
 
 ### Skills (.claude/skills/)
-- **carl-video-editor** — AI video editing: cut silence, add subtitles, b-roll, effects, render with Remotion
-- **gemini-api** — Google Gemini models via beta.vertexapis.com (text, images, video analysis)
+- **gemini-api** — Google Gemini models via beta.vertexapis.com (text, images, video analysis, image generation)
 
 ### Commands (.claude/commands/)
 - **/wrapup** — Save conversation, generate summary, compact
@@ -26,7 +25,6 @@ Video rendering components. Setup: `cd remotion && npm install`
 - JohannesVideo.jsx — Talking head + b-roll subtitles
 - VoxTitle.jsx — VOX scrolling title animation
 - ShortBrand.jsx — Short-form personal brand video
-- RetroGlass.jsx, RetroPong.jsx — Retro glass effects
 
 ### Research (research/)
 - **matt-gray/** — Deep brand analysis (text, visual, video, strategy)
@@ -35,21 +33,68 @@ Video rendering components. Setup: `cd remotion && npm install`
 - **liam-vlogs/** — Vlog channel analysis (in progress)
 - **autoresearch-video.py** — Karpathy-inspired self-improving video loop
 
+## Video Editing Workflow
+
+When Johannes gives you a raw video file, follow this pipeline:
+
+### Step 1: Prepare
+```bash
+# If file is >20MB, create proxy for Gemini analysis
+./scripts/proxy.sh input.mp4
+
+# Re-encode to constant 30fps (required for Remotion)
+ffmpeg -i input.mp4 -vf "fps=30,format=yuv420p" -c:v libx264 -preset fast -crf 18 -movflags +faststart -c:a aac output_30fps.mp4
+```
+
+### Step 2: Transcribe (faster-whisper)
+```python
+from faster_whisper import WhisperModel
+model = WhisperModel("medium", device="cpu", compute_type="int8")
+segments, info = model.transcribe("audio.wav", language="no", word_timestamps=True)
+```
+This gives word-level timestamps for subtitles and cut points.
+
+### Step 3: Analyze with Gemini
+Send the video (or proxy) to Gemini for content analysis:
+- What's being said and when
+- Key moments for b-roll
+- Silence/bad takes to cut
+- Suggested structure
+
+Use the gemini-api skill for API details. Key: always `"role": "user"`, always `User-Agent` header.
+
+### Step 4: Cut
+Use ffmpeg to remove silence and bad takes based on Gemini + whisper analysis:
+```bash
+# Detect silence
+ffmpeg -i input.mp4 -af "silencedetect=noise=-30dB:d=0.5" -f null - 2>&1 | grep silence
+
+# Cut specific segment
+ffmpeg -i input.mp4 -ss START -to END -c copy segment.mp4
+```
+
+### Step 5: Overlays (Remotion)
+Generate subtitle overlay and b-roll slides matching Johannes's style.
+Read the relevant style from styles/ before generating.
+Use OffthreadVideo (NEVER Video component) for embedding video in Remotion.
+
 ## How to Work
 - Norwegian by default unless asked for English
 - Use skills when available
 - Read style files before applying any style
 - All Remotion rendering: use OffthreadVideo, re-encode VFR to constant 30fps
 - Gemini API: always include "role": "user", use requests lib with User-Agent header
+- For large videos (>20MB): use scripts/proxy.sh before sending to Gemini
 - Don't over-engineer. Start small, iterate.
 
-## API Keys
-- Gemini: in .env (GEMINI_API_KEY)
-- ElevenLabs: in .env (ELEVENLABS_API_KEY)
-- YouTube: in .env (YOUTUBE_API_KEY)
+## API Keys (put in .env)
+- GEMINI_API_KEY — Google Gemini via beta.vertexapis.com
+- ELEVENLABS_API_KEY — Text-to-speech
+- YOUTUBE_API_KEY — YouTube data API
 
 ## Content Strategy
 - Professional channel: AI agents, Claude Code tutorials (Nick Saraev / Liam Ottley inspired)
 - Personal brand channel: vlogs, building in public (Liam Ottley VLOGs / Matt Gray inspired)
 - Brand voice: authentic, casual, Norwegian, NOT techie-bro
+- Research in research/ folder — read before creating content
 - Skills-based workflow: scriptwriter → film → cut → subtitles → b-roll → post
