@@ -59,38 +59,95 @@ segments, info = model.transcribe("video.mp4", language="no", word_timestamps=Tr
 
 Save ALL word-level timestamps. These are the ground truth for subtitle timing.
 
+**NOTE: Johannes has a trøndersk (Trondheim) dialect.** Whisper often mishears dialect words. Common corrections needed:
+- Trøndersk pronunciation vs bokmål spelling
+- English loanwords mixed into Norwegian speech
+- Technical terms (AI, Slack, etc.)
+
 ---
 
 ## Step 3: Cut — Remove retakes, silence, bad takes
 
-### Method A: Gemini + whisper (best quality, if Gemini is up)
+### Method A: Gemini + whisper (best quality)
 
-1. Send proxy video + whisper transcript to Gemini
-2. Gemini identifies which segments to KEEP (not cut)
-3. Returns a JSON cut list with start/end times
+**Two-step process:**
+1. **Gemini** decides WHICH segments to keep (content analysis, retake selection)
+2. **Whisper word timestamps** trim each segment to START exactly when speech begins
+
+#### API Fallback Chain (try in order):
+1. `gemini-3.1-flash-lite-preview` via `generativelanguage.googleapis.com` with **File API upload** (fastest — 6s response!)
+2. `gemini-3-flash-preview` via `beta.vertexapis.com` (backup)
+3. `gemini-3.1-pro-preview` via `beta.vertexapis.com` (heavy backup)
+
+**ALWAYS use Google File API for video uploads** — upload video first, get URI, send URI to Gemini. No base64.
 
 ```python
-# Use gemini-3.1-pro-preview (preferred) or gemini-2.5-flash (fallback)
-# If beta.vertexapis.com is down, use original Google API:
-#   https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=GOOGLE_API_KEY
-prompt = f"""Denne videoen er rå footage. Lag en STRAM cut-liste som fjerner:
-1. Alle retakes (behold KUN den beste versjonen)
-2. ALL silence over 0.3 sekunder — vær AGGRESSIV, kutt tett!
-3. Nøling, uferdige setninger, feilstart
-Kutt skal være TETT — Matt Gray / Liam Ottley stil. Ingen dead air.
-Returner JSON: [{{"s": 0.0, "e": 4.3, "t": "hva som sies"}}]"""
+# Upload video to Google File API
+import requests
+resp = requests.post(
+    f"https://generativelanguage.googleapis.com/upload/v1beta/files?key={GOOGLE_API_KEY}",
+    headers={"X-Goog-Upload-Protocol": "resumable", "X-Goog-Upload-Command": "start",
+             "X-Goog-Upload-Header-Content-Length": str(file_size),
+             "X-Goog-Upload-Header-Content-Type": "video/mp4",
+             "Content-Type": "application/json"},
+    json={"file": {"display_name": "video_proxy"}}
+)
+upload_url = resp.headers["X-Goog-Upload-URL"]
+resp2 = requests.put(upload_url,
+    headers={"X-Goog-Upload-Command": "upload, finalize", "X-Goog-Upload-Offset": "0",
+             "Content-Type": "video/mp4"},
+    data=open(proxy_path, "rb").read())
+file_uri = resp2.json()["file"]["uri"]
+# Wait for ACTIVE state, then use fileData in request
 ```
 
-**IMPORTANT — Gemini trunkerer ofte JSON-responses.** Løsninger:
-- Bruk korte nøkler (`s`, `e`, `t` istedenfor `start`, `end`, `text`)
-- Sett `maxOutputTokens: 8192`
-- Hvis JSON er trunkert: finn siste `}` og legg til `]` for å lukke arrayen
-- Hold prompten kort — Gemini trunkerer mer med lange prompts
+```bash
+# Test with curl first to confirm API is up:
+curl -s "https://beta.vertexapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=$GEMINI_API_KEY" \
+  -H "Content-Type: application/json" -H "User-Agent: Mozilla/5.0" \
+  -d '{"contents":[{"role":"user","parts":[{"text":"say hi"}]}]}' | head -c 100
+```
 
-**IMPORTANT — Gemini kan gi for løse cuts.** Etter Gemini returnerer, gå gjennom listen manuelt:
-- Fjern retakes Gemini ikke fanget (den beholder ofte begge versjoner)
-- Stram silence: hvis det er >0.5s gap mellom segmenter, vurder å kutte tettere
-- Videoen skal føles snappy — ingen pauser der personen ikke snakker
+```python
+prompt = f"""Norsk vlog. Transcript:
+{transcript_text}
+Lag cut-liste: segmenter å BEHOLDE. Fjern retakes, silence, nøling. Behold beste versjon.
+Kutt TETT — Matt Gray stil. Ingen dead air.
+JSON: [{{"s":start,"e":end,"t":"tekst"}}]
+Bare JSON."""
+```
+
+**IMPORTANT — Gemini trunkerer JSON.** Fix:
+- Korte nøkler (`s`, `e`, `t`), kort prompt
+- `maxOutputTokens: 8192`
+- Trunkert JSON: finn siste `}`, legg til `]`
+
+#### Whisper-trim: fjern silence i starten av hvert segment
+
+Etter Gemini gir cut-listen, TRIM hvert segment med whisper word timestamps:
+
+```python
+# For hvert segment fra Gemini:
+# 1. Finn whisper-ord som faller innenfor [s, e]
+# 2. Nytt start = første ord sin start - 0.03s (30ms buffer — TIGHT!)
+# 3. Nytt slutt = siste ord sin end + 0.03s
+# Resultat: klippet starter AKKURAT når personen begynner å snakke
+
+for i, cut in enumerate(gemini_cuts):
+    words_in_range = [w for w in all_whisper_words
+                      if w["start"] >= cut["s"] - 0.5 and w["end"] <= cut["e"] + 0.5]
+    if words_in_range:
+        cut["s"] = max(0, words_in_range[0]["start"] - 0.03)  # 30ms before first word
+        # For LAST segment: keep 0.5s extra after last word (smooth ending)
+        if i == len(gemini_cuts) - 1:
+            cut["e"] = words_in_range[-1]["end"] + 0.5
+        else:
+            cut["e"] = words_in_range[-1]["end"] + 0.03  # 30ms after last word
+```
+
+**Silence cutting is AGGRESSIVE:** Every cut starts right when speech begins. No dead air between segments. The ONLY exception is the **last segment** — give it 0.5s extra breathing room so the video doesn't end abruptly.
+
+**Also review manually:** Gemini sometimes keeps both retake versions — remove duplicates.
 
 ### Method B: Whisper-only (if Gemini is down)
 
@@ -205,7 +262,7 @@ ffmpeg -y -i edited_video.mp4 -i music.mp3 \
 
 ### Audio settings
 - **Lowpass:** 800Hz (ask user if they want different — this is the proven default)
-- **Volume:** 7% for talking head (ask user to confirm)
+- **Volume:** 7.5% for talking head (volume=0.075)
 - **Fade in:** 2 seconds from start
 - **Fade out:** 3 seconds before end
 - **Always analyze voice volume first** with `volumedetect`
@@ -288,7 +345,7 @@ Use `--concurrency=3` to avoid disk space issues on Mac.
 | Subtitle size | 54px (1080w) / 36px (720w) |
 | Subtitle color | #FFFFFF |
 | Accent color | #FFBF65 |
-| Music volume | 7% |
+| Music volume | 7.5% |
 | Lowpass | 800Hz |
 | Fade in | 2s |
 | Fade out | 3s |
