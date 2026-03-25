@@ -97,6 +97,48 @@ ALL_PROXY=socks5://127.0.0.1:40000 yt-dlp --js-runtimes deno \
 
 If the first recommendation doesn't work, try the next one from the list. Always download as MP3.
 
+### Step 4b: Find the Trending Part of the Song
+
+Most trending sounds on Reels/TikTok use a SPECIFIC part of a song (the hook, drop, or chorus). Find which part:
+
+**Method 1: Sonar Pro (best — knows what's actually trending)**
+```python
+resp = requests.post("https://perplexity.claude.gg/v1/chat/completions",
+    headers={"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"},
+    json={
+        "model": "sonar-pro",
+        "messages": [{"role": "user", "content": f"What specific part/timestamp of the song '{track_name}' by '{artist}' is trending on TikTok and Instagram Reels right now? What seconds of the song are people using? Give me the exact timestamp range."}]
+    })
+```
+
+**Method 2: Gemini audio analysis (if Sonar doesn't know)**
+```python
+# Send the downloaded MP3 to Gemini
+with open("music.mp3", "rb") as f:
+    b64 = base64.b64encode(f.read()).decode()
+resp = requests.post(URL, json={
+    "contents": [{"role": "user", "parts": [
+        {"inlineData": {"mimeType": "audio/mpeg", "data": b64}},
+        {"text": "Find the most catchy/energetic part of this song (hook, chorus, or drop). Give me the EXACT start and end time in seconds. Also suggest the best 15-second and 30-second clips for short-form content."}
+    ]}]
+})
+```
+
+**Then clip it:**
+```bash
+ffmpeg -i music.mp3 -ss START_SECONDS -to END_SECONDS -c copy music_clip.mp3
+```
+
+### API Fallback Chain
+
+If one API is down, try the next:
+1. **Gemini 2.5 Flash** (beta.vertexapis.com) — primary for audio/video
+2. **Gemini 3 Pro** (api.claude.gg) — backup (may return empty)
+3. **GPT-5.3 Codex** (codex.claude.gg) — text-only, describe what you need
+4. **Sonar Pro** (perplexity.claude.gg) — web search, always works
+
+Always test with a simple request first. If empty response, move to next.
+
 ### Step 5: Mix Audio
 
 Mix the background music with the video's existing audio at the right level:
