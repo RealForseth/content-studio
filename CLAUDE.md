@@ -7,6 +7,10 @@ Two YouTube channels: Professional (AI/tech tutorials) + Personal brand (vlogs).
 ## What's Here
 
 ### Skills (.claude/skills/)
+- **video-edit** — Johannes's signature editing pipeline: raw footage → cuts → subtitles → music → render
+- **trending-sound** — Find trending music from Spotify playlists, download via yt-dlp, mix with lowpass
+- **style-match** — Recreate video styles with Remotion via Gemini autoresearch loop
+- **zoom-intro** — Cinematic zoom-in opener with ghost layers + chromatic aberration
 - **gemini-api** — Google Gemini models via beta.vertexapis.com (text, images, video analysis, image generation)
 
 ### Commands (.claude/commands/)

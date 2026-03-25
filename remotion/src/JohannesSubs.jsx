@@ -35,11 +35,9 @@ const SUBS = [
   { text: "Jeg kjøpte meg et", start: 9.02, end: 9.44 },
   { text: "kamera,", start: 9.44, end: 9.9 },
   { text: "hvis dere vil.", start: 10.22, end: 10.76 },
-  // 11.0-13.0s: camera b-roll — NO subtitles
   { text: "30 000 pluss.", start: 13.1, end: 14.22 },
   { text: "Ikke inkludert linse,", start: 14.4, end: 15.48 },
   { text: "ikke inkludert mikrofoner.", start: 15.48, end: 17.22 },
-  // 17.3-19.9s: insert clip — NO subtitles
   { text: "Men hva er det", start: 20.0, end: 20.46 },
   { text: "jeg gjør istedenfor?", start: 20.46, end: 21.08 },
   { text: "Nei.", start: 21.28, end: 21.64 },
@@ -85,7 +83,7 @@ const SUBS = [
 ];
 
 const SlackCorrection = () => (
-  <div style={{ position: "absolute", bottom: 140, left: 0, right: 0, display: "flex", justifyContent: "center", pointerEvents: "none" }}>
+  <div style={{ position: "absolute", bottom: 140, left: 0, right: 0, display: "flex", justifyContent: "center", pointerEvents: "none", zIndex: 10 }}>
     <span style={{ fontFamily, fontWeight: 900, fontSize: 36, letterSpacing: "-1px", lineHeight: 1.25, color: C.subtitleColor, textShadow: C.subtitleShadow, textAlign: "center", padding: "8px 16px" }}>
       {"som jobber på "}
       <span style={{ position: "relative", display: "inline-block" }}>
@@ -102,7 +100,7 @@ const SlackCorrection = () => (
 );
 
 const Subtitle = ({ text }) => (
-  <div style={{ position: "absolute", bottom: 140, left: 0, right: 0, display: "flex", justifyContent: "center", pointerEvents: "none" }}>
+  <div style={{ position: "absolute", bottom: 140, left: 0, right: 0, display: "flex", justifyContent: "center", pointerEvents: "none", zIndex: 10 }}>
     <span style={{ fontFamily, fontWeight: 900, fontSize: 36, letterSpacing: "-1px", lineHeight: 1.25, color: C.subtitleColor, textShadow: C.subtitleShadow, textAlign: "center", padding: "8px 16px", maxWidth: "90%" }}>
       {text}
     </span>
@@ -117,7 +115,10 @@ export const JohannesSubs = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
-      <OffthreadVideo src={staticFile("edited_v4_30fps.mp4")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      <OffthreadVideo
+        src={staticFile("edited_v4_30fps.mp4")}
+        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+      />
       {activeSub && (activeSub.slackCorrection ? <SlackCorrection /> : <Subtitle text={activeSub.text} />)}
     </AbsoluteFill>
   );
