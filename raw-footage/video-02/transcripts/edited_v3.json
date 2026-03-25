@@ -1,0 +1,1040 @@
+[
+  {
+    "start": 0.14,
+    "end": 6.9,
+    "text": "Yo, nå har jeg bestemt meg for å oppdater Karl. Karl jobber inn her i The As We Speak for å redigere en video, bare for å teste.",
+    "words": [
+      {
+        "word": "Yo,",
+        "start": 0.14,
+        "end": 0.76
+      },
+      {
+        "word": "nå",
+        "start": 1.08,
+        "end": 1.38
+      },
+      {
+        "word": "har",
+        "start": 1.38,
+        "end": 1.72
+      },
+      {
+        "word": "jeg",
+        "start": 1.72,
+        "end": 1.72
+      },
+      {
+        "word": "bestemt",
+        "start": 1.72,
+        "end": 2.0
+      },
+      {
+        "word": "meg",
+        "start": 2.0,
+        "end": 2.16
+      },
+      {
+        "word": "for",
+        "start": 2.16,
+        "end": 2.7
+      },
+      {
+        "word": "å",
+        "start": 2.7,
+        "end": 3.18
+      },
+      {
+        "word": "oppdater",
+        "start": 3.18,
+        "end": 3.48
+      },
+      {
+        "word": "Karl.",
+        "start": 3.48,
+        "end": 3.76
+      },
+      {
+        "word": "Karl",
+        "start": 3.88,
+        "end": 4.12
+      },
+      {
+        "word": "jobber",
+        "start": 4.12,
+        "end": 4.38
+      },
+      {
+        "word": "inn",
+        "start": 4.38,
+        "end": 4.62
+      },
+      {
+        "word": "her",
+        "start": 4.62,
+        "end": 4.76
+      },
+      {
+        "word": "i",
+        "start": 4.76,
+        "end": 4.82
+      },
+      {
+        "word": "The",
+        "start": 4.82,
+        "end": 4.94
+      },
+      {
+        "word": "As",
+        "start": 4.94,
+        "end": 5.1
+      },
+      {
+        "word": "We",
+        "start": 5.1,
+        "end": 5.22
+      },
+      {
+        "word": "Speak",
+        "start": 5.22,
+        "end": 5.48
+      },
+      {
+        "word": "for",
+        "start": 5.48,
+        "end": 5.72
+      },
+      {
+        "word": "å",
+        "start": 5.72,
+        "end": 5.84
+      },
+      {
+        "word": "redigere",
+        "start": 5.84,
+        "end": 6.04
+      },
+      {
+        "word": "en",
+        "start": 6.04,
+        "end": 6.18
+      },
+      {
+        "word": "video,",
+        "start": 6.18,
+        "end": 6.36
+      },
+      {
+        "word": "bare",
+        "start": 6.5,
+        "end": 6.54
+      },
+      {
+        "word": "for",
+        "start": 6.54,
+        "end": 6.64
+      },
+      {
+        "word": "å",
+        "start": 6.64,
+        "end": 6.7
+      },
+      {
+        "word": "teste.",
+        "start": 6.7,
+        "end": 6.9
+      }
+    ]
+  },
+  {
+    "start": 7.1,
+    "end": 12.2,
+    "text": "Og nå tenkte jeg å filme den her, bare for å teste mens han tester. Sånn double test, vet du.",
+    "words": [
+      {
+        "word": "Og",
+        "start": 7.1,
+        "end": 7.2
+      },
+      {
+        "word": "nå",
+        "start": 7.2,
+        "end": 7.54
+      },
+      {
+        "word": "tenkte",
+        "start": 7.54,
+        "end": 7.9
+      },
+      {
+        "word": "jeg",
+        "start": 7.9,
+        "end": 7.96
+      },
+      {
+        "word": "å",
+        "start": 7.96,
+        "end": 7.98
+      },
+      {
+        "word": "filme",
+        "start": 7.98,
+        "end": 8.1
+      },
+      {
+        "word": "den",
+        "start": 8.1,
+        "end": 8.26
+      },
+      {
+        "word": "her,",
+        "start": 8.26,
+        "end": 8.66
+      },
+      {
+        "word": "bare",
+        "start": 8.86,
+        "end": 8.94
+      },
+      {
+        "word": "for",
+        "start": 8.94,
+        "end": 9.04
+      },
+      {
+        "word": "å",
+        "start": 9.04,
+        "end": 9.06
+      },
+      {
+        "word": "teste",
+        "start": 9.06,
+        "end": 9.26
+      },
+      {
+        "word": "mens",
+        "start": 9.26,
+        "end": 9.68
+      },
+      {
+        "word": "han",
+        "start": 9.68,
+        "end": 9.8
+      },
+      {
+        "word": "tester.",
+        "start": 9.8,
+        "end": 10.06
+      },
+      {
+        "word": "Sånn",
+        "start": 10.92,
+        "end": 11.16
+      },
+      {
+        "word": "double",
+        "start": 11.16,
+        "end": 11.44
+      },
+      {
+        "word": "test,",
+        "start": 11.44,
+        "end": 11.78
+      },
+      {
+        "word": "vet",
+        "start": 12.04,
+        "end": 12.12
+      },
+      {
+        "word": "du.",
+        "start": 12.12,
+        "end": 12.2
+      }
+    ]
+  },
+  {
+    "start": 12.32,
+    "end": 16.88,
+    "text": "Jeg har valgt å kalle assistenten min Karl, men jeg har merket at det ruller ikke så veldig mye på tunga.",
+    "words": [
+      {
+        "word": "Jeg",
+        "start": 12.32,
+        "end": 12.42
+      },
+      {
+        "word": "har",
+        "start": 12.42,
+        "end": 12.42
+      },
+      {
+        "word": "valgt",
+        "start": 12.42,
+        "end": 12.6
+      },
+      {
+        "word": "å",
+        "start": 12.6,
+        "end": 12.8
+      },
+      {
+        "word": "kalle",
+        "start": 12.8,
+        "end": 13.02
+      },
+      {
+        "word": "assistenten",
+        "start": 13.02,
+        "end": 13.4
+      },
+      {
+        "word": "min",
+        "start": 13.4,
+        "end": 13.44
+      },
+      {
+        "word": "Karl,",
+        "start": 13.44,
+        "end": 13.86
+      },
+      {
+        "word": "men",
+        "start": 14.02,
+        "end": 14.32
+      },
+      {
+        "word": "jeg",
+        "start": 14.32,
+        "end": 15.02
+      },
+      {
+        "word": "har",
+        "start": 15.02,
+        "end": 15.04
+      },
+      {
+        "word": "merket",
+        "start": 15.04,
+        "end": 15.28
+      },
+      {
+        "word": "at",
+        "start": 15.28,
+        "end": 15.34
+      },
+      {
+        "word": "det",
+        "start": 15.34,
+        "end": 15.5
+      },
+      {
+        "word": "ruller",
+        "start": 15.5,
+        "end": 15.7
+      },
+      {
+        "word": "ikke",
+        "start": 15.7,
+        "end": 15.8
+      },
+      {
+        "word": "så",
+        "start": 15.8,
+        "end": 16.06
+      },
+      {
+        "word": "veldig",
+        "start": 16.06,
+        "end": 16.28
+      },
+      {
+        "word": "mye",
+        "start": 16.28,
+        "end": 16.4
+      },
+      {
+        "word": "på",
+        "start": 16.4,
+        "end": 16.52
+      },
+      {
+        "word": "tunga.",
+        "start": 16.52,
+        "end": 16.88
+      }
+    ]
+  },
+  {
+    "start": 17.22,
+    "end": 20.02,
+    "text": "Så, vi skal finne på et bedre navn til Karl. Til assistenten.",
+    "words": [
+      {
+        "word": "Så,",
+        "start": 17.22,
+        "end": 17.62
+      },
+      {
+        "word": "vi",
+        "start": 17.96,
+        "end": 18.04
+      },
+      {
+        "word": "skal",
+        "start": 18.04,
+        "end": 18.14
+      },
+      {
+        "word": "finne",
+        "start": 18.14,
+        "end": 18.26
+      },
+      {
+        "word": "på",
+        "start": 18.26,
+        "end": 18.38
+      },
+      {
+        "word": "et",
+        "start": 18.38,
+        "end": 18.46
+      },
+      {
+        "word": "bedre",
+        "start": 18.46,
+        "end": 18.6
+      },
+      {
+        "word": "navn",
+        "start": 18.6,
+        "end": 18.8
+      },
+      {
+        "word": "til",
+        "start": 18.8,
+        "end": 18.8
+      },
+      {
+        "word": "Karl.",
+        "start": 18.8,
+        "end": 19.14
+      },
+      {
+        "word": "Til",
+        "start": 19.5,
+        "end": 19.62
+      },
+      {
+        "word": "assistenten.",
+        "start": 19.62,
+        "end": 20.02
+      }
+    ]
+  },
+  {
+    "start": 20.36,
+    "end": 25.32,
+    "text": "Men nå er jeg veldig spent på å se om den klarer å analysere alle de ulike mellomrondene, der det er silent,",
+    "words": [
+      {
+        "word": "Men",
+        "start": 20.36,
+        "end": 20.54
+      },
+      {
+        "word": "nå",
+        "start": 20.54,
+        "end": 20.6
+      },
+      {
+        "word": "er",
+        "start": 20.6,
+        "end": 20.64
+      },
+      {
+        "word": "jeg",
+        "start": 20.64,
+        "end": 20.68
+      },
+      {
+        "word": "veldig",
+        "start": 20.68,
+        "end": 20.82
+      },
+      {
+        "word": "spent",
+        "start": 20.82,
+        "end": 21.08
+      },
+      {
+        "word": "på",
+        "start": 21.08,
+        "end": 21.36
+      },
+      {
+        "word": "å",
+        "start": 21.36,
+        "end": 21.42
+      },
+      {
+        "word": "se",
+        "start": 21.42,
+        "end": 21.56
+      },
+      {
+        "word": "om",
+        "start": 21.56,
+        "end": 21.76
+      },
+      {
+        "word": "den",
+        "start": 21.76,
+        "end": 21.88
+      },
+      {
+        "word": "klarer",
+        "start": 21.88,
+        "end": 22.08
+      },
+      {
+        "word": "å",
+        "start": 22.08,
+        "end": 22.28
+      },
+      {
+        "word": "analysere",
+        "start": 22.28,
+        "end": 23.0
+      },
+      {
+        "word": "alle",
+        "start": 23.0,
+        "end": 23.16
+      },
+      {
+        "word": "de",
+        "start": 23.16,
+        "end": 23.36
+      },
+      {
+        "word": "ulike",
+        "start": 23.36,
+        "end": 23.76
+      },
+      {
+        "word": "mellomrondene,",
+        "start": 23.76,
+        "end": 24.44
+      },
+      {
+        "word": "der",
+        "start": 24.6,
+        "end": 24.7
+      },
+      {
+        "word": "det",
+        "start": 24.7,
+        "end": 24.82
+      },
+      {
+        "word": "er",
+        "start": 24.82,
+        "end": 24.98
+      },
+      {
+        "word": "silent,",
+        "start": 24.98,
+        "end": 25.32
+      }
+    ]
+  },
+  {
+    "start": 25.32,
+    "end": 28.36,
+    "text": "om det er ulike kutt som er feil å fucka oppå.",
+    "words": [
+      {
+        "word": "om",
+        "start": 25.32,
+        "end": 25.56
+      },
+      {
+        "word": "det",
+        "start": 25.56,
+        "end": 25.66
+      },
+      {
+        "word": "er",
+        "start": 25.66,
+        "end": 26.3
+      },
+      {
+        "word": "ulike",
+        "start": 26.3,
+        "end": 26.66
+      },
+      {
+        "word": "kutt",
+        "start": 26.66,
+        "end": 26.9
+      },
+      {
+        "word": "som",
+        "start": 26.9,
+        "end": 27.08
+      },
+      {
+        "word": "er",
+        "start": 27.08,
+        "end": 27.3
+      },
+      {
+        "word": "feil",
+        "start": 27.3,
+        "end": 27.62
+      },
+      {
+        "word": "å",
+        "start": 27.62,
+        "end": 27.74
+      },
+      {
+        "word": "fucka",
+        "start": 27.74,
+        "end": 28.12
+      },
+      {
+        "word": "oppå.",
+        "start": 28.12,
+        "end": 28.36
+      }
+    ]
+  },
+  {
+    "start": 28.54,
+    "end": 37.12,
+    "text": "Så er tanken min at den skal ha muligheten til å analysere hva det er jeg sier, hva det er som jeg ikke sier, eller hva jeg sier, og hva jeg fucker oppå.",
+    "words": [
+      {
+        "word": "Så",
+        "start": 28.54,
+        "end": 28.64
+      },
+      {
+        "word": "er",
+        "start": 28.64,
+        "end": 28.72
+      },
+      {
+        "word": "tanken",
+        "start": 28.72,
+        "end": 29.02
+      },
+      {
+        "word": "min",
+        "start": 29.02,
+        "end": 29.12
+      },
+      {
+        "word": "at",
+        "start": 29.12,
+        "end": 29.2
+      },
+      {
+        "word": "den",
+        "start": 29.2,
+        "end": 29.36
+      },
+      {
+        "word": "skal",
+        "start": 29.36,
+        "end": 29.58
+      },
+      {
+        "word": "ha",
+        "start": 29.58,
+        "end": 29.7
+      },
+      {
+        "word": "muligheten",
+        "start": 29.7,
+        "end": 30.06
+      },
+      {
+        "word": "til",
+        "start": 30.06,
+        "end": 30.34
+      },
+      {
+        "word": "å",
+        "start": 30.34,
+        "end": 30.84
+      },
+      {
+        "word": "analysere",
+        "start": 30.84,
+        "end": 31.94
+      },
+      {
+        "word": "hva",
+        "start": 31.94,
+        "end": 32.2
+      },
+      {
+        "word": "det",
+        "start": 32.2,
+        "end": 32.32
+      },
+      {
+        "word": "er",
+        "start": 32.32,
+        "end": 32.5
+      },
+      {
+        "word": "jeg",
+        "start": 32.5,
+        "end": 32.5
+      },
+      {
+        "word": "sier,",
+        "start": 32.5,
+        "end": 32.78
+      },
+      {
+        "word": "hva",
+        "start": 33.12,
+        "end": 33.26
+      },
+      {
+        "word": "det",
+        "start": 33.26,
+        "end": 33.44
+      },
+      {
+        "word": "er",
+        "start": 33.44,
+        "end": 33.48
+      },
+      {
+        "word": "som",
+        "start": 33.48,
+        "end": 33.58
+      },
+      {
+        "word": "jeg",
+        "start": 33.58,
+        "end": 33.7
+      },
+      {
+        "word": "ikke",
+        "start": 33.7,
+        "end": 33.9
+      },
+      {
+        "word": "sier,",
+        "start": 33.9,
+        "end": 34.4
+      },
+      {
+        "word": "eller",
+        "start": 34.64,
+        "end": 34.74
+      },
+      {
+        "word": "hva",
+        "start": 34.74,
+        "end": 34.88
+      },
+      {
+        "word": "jeg",
+        "start": 34.88,
+        "end": 35.0
+      },
+      {
+        "word": "sier,",
+        "start": 35.0,
+        "end": 35.74
+      },
+      {
+        "word": "og",
+        "start": 36.06,
+        "end": 36.12
+      },
+      {
+        "word": "hva",
+        "start": 36.12,
+        "end": 36.18
+      },
+      {
+        "word": "jeg",
+        "start": 36.18,
+        "end": 36.28
+      },
+      {
+        "word": "fucker",
+        "start": 36.28,
+        "end": 36.58
+      },
+      {
+        "word": "oppå.",
+        "start": 36.58,
+        "end": 37.12
+      }
+    ]
+  },
+  {
+    "start": 37.48,
+    "end": 42.72,
+    "text": "Jeg ser bad takes, kanskje dårlig kameravinkel. Ja, det blir litt avansert. Vi må gjøre det litt enkelt, tror jeg.",
+    "words": [
+      {
+        "word": "Jeg",
+        "start": 37.48,
+        "end": 37.76
+      },
+      {
+        "word": "ser",
+        "start": 37.76,
+        "end": 37.76
+      },
+      {
+        "word": "bad",
+        "start": 37.76,
+        "end": 38.14
+      },
+      {
+        "word": "takes,",
+        "start": 38.14,
+        "end": 38.46
+      },
+      {
+        "word": "kanskje",
+        "start": 38.68,
+        "end": 38.88
+      },
+      {
+        "word": "dårlig",
+        "start": 38.88,
+        "end": 39.46
+      },
+      {
+        "word": "kameravinkel.",
+        "start": 39.46,
+        "end": 40.06
+      },
+      {
+        "word": "Ja,",
+        "start": 40.22,
+        "end": 40.4
+      },
+      {
+        "word": "det",
+        "start": 40.48,
+        "end": 40.52
+      },
+      {
+        "word": "blir",
+        "start": 40.52,
+        "end": 40.64
+      },
+      {
+        "word": "litt",
+        "start": 40.64,
+        "end": 40.76
+      },
+      {
+        "word": "avansert.",
+        "start": 40.76,
+        "end": 41.18
+      },
+      {
+        "word": "Vi",
+        "start": 41.84,
+        "end": 41.92
+      },
+      {
+        "word": "må",
+        "start": 41.92,
+        "end": 42.04
+      },
+      {
+        "word": "gjøre",
+        "start": 42.04,
+        "end": 42.16
+      },
+      {
+        "word": "det",
+        "start": 42.16,
+        "end": 42.24
+      },
+      {
+        "word": "litt",
+        "start": 42.24,
+        "end": 42.3
+      },
+      {
+        "word": "enkelt,",
+        "start": 42.3,
+        "end": 42.54
+      },
+      {
+        "word": "tror",
+        "start": 42.64,
+        "end": 42.64
+      },
+      {
+        "word": "jeg.",
+        "start": 42.64,
+        "end": 42.72
+      }
+    ]
+  },
+  {
+    "start": 42.9,
+    "end": 48.72,
+    "text": "Mens jeg snakker også, Karl mekker en video her, basert på, og da er jeg veldig spent på å se om den faktisk mekker en jævlig bra video.",
+    "words": [
+      {
+        "word": "Mens",
+        "start": 42.9,
+        "end": 43.04
+      },
+      {
+        "word": "jeg",
+        "start": 43.04,
+        "end": 43.1
+      },
+      {
+        "word": "snakker",
+        "start": 43.1,
+        "end": 43.34
+      },
+      {
+        "word": "også,",
+        "start": 43.34,
+        "end": 43.52
+      },
+      {
+        "word": "Karl",
+        "start": 43.72,
+        "end": 44.68
+      },
+      {
+        "word": "mekker",
+        "start": 44.68,
+        "end": 44.92
+      },
+      {
+        "word": "en",
+        "start": 44.92,
+        "end": 45.02
+      },
+      {
+        "word": "video",
+        "start": 45.02,
+        "end": 45.22
+      },
+      {
+        "word": "her,",
+        "start": 45.22,
+        "end": 45.56
+      },
+      {
+        "word": "basert",
+        "start": 45.64,
+        "end": 45.96
+      },
+      {
+        "word": "på,",
+        "start": 45.96,
+        "end": 46.48
+      },
+      {
+        "word": "og",
+        "start": 46.7,
+        "end": 46.82
+      },
+      {
+        "word": "da",
+        "start": 46.82,
+        "end": 46.94
+      },
+      {
+        "word": "er",
+        "start": 46.94,
+        "end": 46.96
+      },
+      {
+        "word": "jeg",
+        "start": 46.96,
+        "end": 47.0
+      },
+      {
+        "word": "veldig",
+        "start": 47.0,
+        "end": 47.18
+      },
+      {
+        "word": "spent",
+        "start": 47.18,
+        "end": 47.32
+      },
+      {
+        "word": "på",
+        "start": 47.32,
+        "end": 47.44
+      },
+      {
+        "word": "å",
+        "start": 47.44,
+        "end": 47.48
+      },
+      {
+        "word": "se",
+        "start": 47.48,
+        "end": 47.52
+      },
+      {
+        "word": "om",
+        "start": 47.52,
+        "end": 47.6
+      },
+      {
+        "word": "den",
+        "start": 47.6,
+        "end": 47.74
+      },
+      {
+        "word": "faktisk",
+        "start": 47.74,
+        "end": 48.18
+      },
+      {
+        "word": "mekker",
+        "start": 48.18,
+        "end": 48.38
+      },
+      {
+        "word": "en",
+        "start": 48.38,
+        "end": 48.44
+      },
+      {
+        "word": "jævlig",
+        "start": 48.44,
+        "end": 48.64
+      },
+      {
+        "word": "bra",
+        "start": 48.64,
+        "end": 48.72
+      },
+      {
+        "word": "video.",
+        "start": 48.72,
+        "end": 48.72
+      }
+    ]
+  }
+]

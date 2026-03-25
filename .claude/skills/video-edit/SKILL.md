@@ -21,12 +21,20 @@ Full editing pipeline: raw footage → silence/retake removal → subtitles → 
 ## Step 1: Prepare
 
 ```bash
-# Re-encode to constant 30fps (REQUIRED for Remotion)
-ffmpeg -i input.mp4 -vf "fps=30,format=yuv420p" -c:v libx264 -preset fast -crf 18 -movflags +faststart -c:a aac output_30fps.mp4
+# FIRST: Check rotation metadata (iPhone often records 16:9 with rotation=90 making it 9:16)
+ffprobe -v quiet -print_format json -show_streams input.mp4 | grep rotation
+
+# Re-encode to constant 30fps at MAXIMUM resolution (REQUIRED for Remotion)
+# For 9:16 vertical content: ALWAYS 1080x1920 minimum
+# ffmpeg auto-handles rotation metadata
+ffmpeg -i input.mp4 -vf "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2,format=yuv420p,fps=30" \
+  -c:v libx264 -preset fast -crf 18 -movflags +faststart -c:a aac output_1080.mp4
 
 # If >20MB, create proxy for Gemini analysis
 ./scripts/proxy.sh input.mp4
 ```
+
+**NEVER render below 1080p.** Always scale UP to 1080x1920 for 9:16.
 
 ### Organize files
 ```
@@ -63,18 +71,32 @@ Save ALL word-level timestamps. These are the ground truth for subtitle timing.
 
 ```python
 # Use gemini-3.1-pro-preview (preferred) or gemini-2.5-flash (fallback)
-prompt = f"""Denne videoen er rå footage. Lag en cut-liste som fjerner:
+# If beta.vertexapis.com is down, use original Google API:
+#   https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=GOOGLE_API_KEY
+prompt = f"""Denne videoen er rå footage. Lag en STRAM cut-liste som fjerner:
 1. Alle retakes (behold KUN den beste versjonen)
-2. Alle silences/pauser over 0.5 sekunder
+2. ALL silence over 0.3 sekunder — vær AGGRESSIV, kutt tett!
 3. Nøling, uferdige setninger, feilstart
-Returner JSON: [{{"start": 0.0, "end": 4.3, "text": "hva som sies"}}]"""
+Kutt skal være TETT — Matt Gray / Liam Ottley stil. Ingen dead air.
+Returner JSON: [{{"s": 0.0, "e": 4.3, "t": "hva som sies"}}]"""
 ```
+
+**IMPORTANT — Gemini trunkerer ofte JSON-responses.** Løsninger:
+- Bruk korte nøkler (`s`, `e`, `t` istedenfor `start`, `end`, `text`)
+- Sett `maxOutputTokens: 8192`
+- Hvis JSON er trunkert: finn siste `}` og legg til `]` for å lukke arrayen
+- Hold prompten kort — Gemini trunkerer mer med lange prompts
+
+**IMPORTANT — Gemini kan gi for løse cuts.** Etter Gemini returnerer, gå gjennom listen manuelt:
+- Fjern retakes Gemini ikke fanget (den beholder ofte begge versjoner)
+- Stram silence: hvis det er >0.5s gap mellom segmenter, vurder å kutte tettere
+- Videoen skal føles snappy — ingen pauser der personen ikke snakker
 
 ### Method B: Whisper-only (if Gemini is down)
 
 Use whisper's word timestamps + silence detection to build cuts:
 ```bash
-ffmpeg -i input.mp4 -af "silencedetect=noise=-30dB:d=0.5" -f null - 2>&1 | grep silence
+ffmpeg -i input.mp4 -af "silencedetect=noise=-30dB:d=0.3" -f null - 2>&1 | grep silence
 ```
 Then manually review with the user which segments to keep.
 
@@ -82,7 +104,7 @@ Then manually review with the user which segments to keep.
 ```python
 # For each segment in cut list:
 ffmpeg -y -ss START -i input.mp4 -t DURATION \
-  -vf "fps=30,format=yuv420p" -c:v libx264 -preset fast -crf 18 \
+  -c:v libx264 -preset fast -crf 18 \
   -c:a aac -b:a 128k segment_XX.mp4
 
 # Concatenate all segments:
@@ -201,9 +223,9 @@ const C = {
 };
 
 // Font: Inter Black (900)
-// Size: 36px
-// Letter-spacing: -1px
-// Position: bottom 140px, centered
+// Size: scale to canvas — 54px for 1080x1920, 36px for 720x1280
+// Letter-spacing: -1.5px (1080) or -1px (720)
+// Position: bottom 220px (1080) or bottom 140px (720)
 // Max width: 90%
 // Always single line
 ```
@@ -220,13 +242,14 @@ Use `--concurrency=3` to avoid disk space issues on Mac.
 
 ### Composition setup
 ```jsx
+// ALWAYS 1080x1920 for 9:16 content — NEVER 720x1280
 <Composition
-  id="JohannesSubs"
-  component={JohannesSubs}
+  id="VideoSubs"
+  component={VideoSubs}
   durationInFrames={TOTAL_FRAMES}  // video duration * 30
   fps={30}
-  width={720}   // match video
-  height={1280} // match video
+  width={1080}
+  height={1920}
 />
 ```
 
@@ -262,7 +285,7 @@ Use `--concurrency=3` to avoid disk space issues on Mac.
 | Setting | Value |
 |---------|-------|
 | Font | Inter Black (900) |
-| Subtitle size | 36px |
+| Subtitle size | 54px (1080w) / 36px (720w) |
 | Subtitle color | #FFFFFF |
 | Accent color | #FFBF65 |
 | Music volume | 7% |
