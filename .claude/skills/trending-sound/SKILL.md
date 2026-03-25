@@ -50,7 +50,14 @@ Also read the user's brand voice from `profile/brand-voice.md` if it exists — 
 
 ### Step 3: Search for Trending Sounds with Sonar Pro
 
-Use Perplexity Sonar Pro for real-time web search of trending music:
+Use Perplexity Sonar Pro for real-time web search. The search MUST be specific to the creator niche.
+
+**IMPORTANT context for search:**
+- We need sounds that are ACTUALLY trending on TikTok/Instagram Reels RIGHT NOW
+- NOT generic "royalty-free vlog music" — those are never trending
+- Search for what ENTREPRENEURS, PERSONAL BRAND creators, and PRODUCTIVITY creators are using
+- Check TikTok Creative Center, Instagram audio trends, and creator compilations
+- The sound will be VERY subtle in the background (5-8% volume) — it's texture, not the focus
 
 ```python
 resp = requests.post("https://perplexity.claude.gg/v1/chat/completions",
@@ -58,42 +65,54 @@ resp = requests.post("https://perplexity.claude.gg/v1/chat/completions",
     json={
         "model": "sonar-pro",
         "messages": [{"role": "user", "content": f"""
-Find trending background music for a {platform} video with this vibe:
-{gemini_vibe_analysis}
+Search TikTok Creative Center and Instagram Reels trending audio for {current_month} {current_year}.
 
-Requirements:
-- Must be royalty-free or available for content creators
-- Should be trending or popular in {current_month} {current_year}
-- Match the energy level and mood described
-- BPM range: {bpm_range}
+I need the ACTUAL trending sounds that entrepreneur/personal brand/productivity creators are using on TikTok and Instagram Reels RIGHT NOW.
+
+Think: Matt Gray, Liam Ottley, Dan Koe, Alex Hormozi style creators. What background music are THEY using in their short-form content?
 
 Search for:
-1. Trending songs/sounds on {platform} RIGHT NOW that match this vibe
-2. Popular background music for short form content creators
-3. Trending audio clips being used in reels/TikToks this week/month
-4. Songs that match the energy, mood, and BPM described
+1. Check TikTok Creative Center trending sounds this week/month
+2. What sounds are popular entrepreneur/personal branding TikTok creators using?
+3. What background audio do productivity/AI content creators use on Reels?
+4. Trending sounds in the "build in public" / startup / entrepreneur niche
 
-Give me 5 specific recommendations with:
+Requirements:
+- Must be currently trending (not old generic lo-fi)
+- The kind of subtle, modern sound you hear behind talking-head Reels
+- Can be a song snippet, ambient sound, or trending audio clip
+- BPM: 90-120 (medium energy, not too chill, not too hype)
+
+Give me 5 specific tracks with:
 - Track name + artist
-- YouTube link to the song (IMPORTANT — we download from YouTube)
-- Why it matches the vibe
-- BPM and genre
-- Is it currently trending on {platform}?
+- YouTube search query to find it (e.g. "track name artist official audio")
+- Genre / BPM
+- Why entrepreneur creators are using it
+- How many Reels/TikToks use this sound (if known)
 """}]
     }, timeout=60)
 ```
 
 ### Step 4: Download the Track from YouTube
 
-Download the recommended track as MP3 from YouTube:
+YouTube blocks bot/AI traffic. **MUST use Cloudflare WARP** to download.
 
 ```bash
-# Download audio only as MP3 from YouTube link
-# Use WARP proxy if on VPS
-ALL_PROXY=socks5://127.0.0.1:40000 yt-dlp --js-runtimes deno \
-  --extract-audio --audio-format mp3 --audio-quality 0 \
+# Step 1: Connect WARP (required before every yt-dlp download)
+warp-cli connect
+
+# Step 2: Wait for connection
+sleep 2
+
+# Step 3: Download audio as MP3
+yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 \
   -o "music.%(ext)s" "YOUTUBE_URL"
+
+# Step 4: Disconnect WARP immediately after download (don't leave it on)
+warp-cli disconnect
 ```
+
+**IMPORTANT:** Always disconnect WARP after download. Don't leave it running — it routes all traffic through Cloudflare.
 
 If the first recommendation doesn't work, try the next one from the list. Always download as MP3.
 
@@ -163,10 +182,11 @@ ffmpeg -i video.mp4 -i music.mp3 \
 # amix with dropout_transition for smooth mixing
 ```
 
-**Volume Guidelines:**
-- Talking head with voice: music at 10-15% volume (volume=0.10 to 0.15)
-- B-roll without voice: music at 40-60% volume (volume=0.40 to 0.60)
-- Intro/outro without voice: music at 50-70% volume (volume=0.50 to 0.70)
+**Volume Guidelines (SUBTLE — music is texture, not focus):**
+- Talking head with voice: music at **5-8% volume** (volume=0.05 to 0.08) — barely audible, just fills silence
+- B-roll without voice: music at 20-30% volume (volume=0.20 to 0.30)
+- Intro/outro without voice: music at 30-40% volume (volume=0.30 to 0.40)
+- **ALWAYS analyze voice volume first** with `volumedetect` and set music at least -25dB below voice
 
 For dynamic mixing (louder during b-roll, quieter during speech), use sidechain-like approach:
 ```bash
@@ -180,6 +200,69 @@ ffmpeg -i original_audio.wav -af "silencedetect=noise=-30dB:d=0.3" -f null - 2>&
 - Save the mixed video
 - Tell the user: "Added [track name] at [volume]%. Fades in over 2s, fades out over 3s."
 - Ask: "Want me to adjust the volume? Louder/quieter?"
+
+---
+
+## Pre-Approved Song Libraries (USE THESE FIRST)
+
+Instead of researching every time, pick from Johannes's curated Spotify playlists. Only do Sonar Pro research if explicitly asked.
+
+### Johannes's Personal List ("CONTENT 26")
+**Spotify:** https://open.spotify.com/playlist/0eKpef39CZvPpe2iXyD5ya
+**Use when:** Johannes says "ta fra min liste" or "nyeste sang fra min liste"
+- You Can Call Me Al — Paul Simon
+- Higher Ground (Acoustic) — SKAAR
+- Bless the Telephone — Labi Siffre
+- Higher Ground — SKAAR
+
+### "Alltid bra valg" — Daniel Dalen-inspired (hip-hop/soulful)
+**Spotify:** https://open.spotify.com/playlist/2WgLvrsalF0ueyWbc1v5Us
+**Use when:** Confident, soulful, entrepreneur energy. Short-form content.
+Top picks for vlogs:
+- Summer Reign (feat. Ty Dolla $ign) — Larry June, The Alchemist
+- nyc in 1940 — berlioz, Ted Jasper
+- deep in it — berlioz, Ted Jasper
+- Smooth Arrangements — Klaus Veen
+- Show Me — Joey Bada$$
+- Homegrown — CARRTOONS
+- What You Heard — Sonder
+- BEST INTEREST — Tyler, The Creator
+- Nikes on My Feet — Mac Miller
+- Last Last — Burna Boy
+
+### "Aesthetic YouTube Vlogs" — Lo-fi/chill (talking head + b-roll)
+**Spotify:** https://open.spotify.com/playlist/3iJULBUtg3vcmBJOWoamZB
+**Use when:** Chill aesthetic vlogs, softer energy, day-in-the-life content.
+Top picks:
+- Love Mode — Joakim Karud
+- Canals — Joakim Karud
+- Far Away — Tomppabeats
+- 5:32pm — The Deli
+- Affection — Jinsang
+- sincerely, yours — Nohidea
+- Warm — Joey Pecoraro
+- Monday Loop — Tomppabeats
+
+### "Ethan Weng Vlogs" — Upbeat/energetic (longer YouTube vlogs)
+**Spotify:** https://open.spotify.com/playlist/3VnesqJdx2wqi1xmPqsATL
+**Use when:** Higher energy vlogs, travel, montages, longer YouTube videos.
+Top picks:
+- Tongue Tied — GROUPLOVE
+- Jubel — Klingande
+- I Got U — Duke Dumont, Jax Jones
+- Kids — MGMT
+- Pursuit Of Happiness (Nightmare) — Kid Cudi
+- Alive — Empire Of The Sun
+- Runaway (U & I) — Galantis
+- Latch — Disclosure, Sam Smith
+
+### How to pick a track
+1. Match video energy to the right playlist
+2. Pick a track from the list
+3. Download from YouTube: `yt-dlp --extract-audio --audio-format mp3 "ytsearch1:TRACK ARTIST"`
+4. No need for Sonar Pro research unless asked
+
+---
 
 ## Available APIs
 

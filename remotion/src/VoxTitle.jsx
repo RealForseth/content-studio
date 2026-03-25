@@ -503,8 +503,8 @@ export const VoxTitle = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: C.bg }}>
-      {/* Sound effects */}
-      <Audio src={staticFile("vox-sfx.wav")} volume={0.7} />
+      {/* Sound effects (disabled — vox-sfx.wav not yet generated) */}
+      {/* <Audio src={staticFile("vox-sfx.wav")} volume={0.7} /> */}
 
       {/* SVG filters */}
       <TurbulentDisplace frame={frame} />

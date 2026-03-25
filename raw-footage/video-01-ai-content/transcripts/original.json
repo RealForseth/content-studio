@@ -1,0 +1,2279 @@
+[
+  {
+    "start": 0.27,
+    "end": 4.33,
+    "text": "Mitt navn er Jonas, og jeg har en tendens til å utesette ting hele tiden.",
+    "words": [
+      {
+        "word": " Mitt",
+        "start": 0.27,
+        "end": 0.85,
+        "probability": 0.82
+      },
+      {
+        "word": " navn",
+        "start": 0.85,
+        "end": 0.99,
+        "probability": 0.96
+      },
+      {
+        "word": " er",
+        "start": 0.99,
+        "end": 1.05,
+        "probability": 0.99
+      },
+      {
+        "word": " Jonas,",
+        "start": 1.05,
+        "end": 1.35,
+        "probability": 0.17
+      },
+      {
+        "word": " og",
+        "start": 1.67,
+        "end": 1.77,
+        "probability": 0.99
+      },
+      {
+        "word": " jeg",
+        "start": 1.77,
+        "end": 2.43,
+        "probability": 0.98
+      },
+      {
+        "word": " har",
+        "start": 2.43,
+        "end": 2.59,
+        "probability": 0.97
+      },
+      {
+        "word": " en",
+        "start": 2.59,
+        "end": 2.69,
+        "probability": 0.98
+      },
+      {
+        "word": " tendens",
+        "start": 2.69,
+        "end": 2.97,
+        "probability": 0.81
+      },
+      {
+        "word": " til",
+        "start": 2.97,
+        "end": 3.09,
+        "probability": 0.73
+      },
+      {
+        "word": " å",
+        "start": 3.09,
+        "end": 3.09,
+        "probability": 1.0
+      },
+      {
+        "word": " utesette",
+        "start": 3.09,
+        "end": 3.43,
+        "probability": 0.55
+      },
+      {
+        "word": " ting",
+        "start": 3.43,
+        "end": 3.57,
+        "probability": 0.93
+      },
+      {
+        "word": " hele",
+        "start": 3.57,
+        "end": 3.87,
+        "probability": 0.99
+      },
+      {
+        "word": " tiden.",
+        "start": 3.87,
+        "end": 4.33,
+        "probability": 0.73
+      }
+    ]
+  },
+  {
+    "start": 4.81,
+    "end": 9.61,
+    "text": "Jeg skulle ha startet å poste videoer på Instagram, TikTok, YouTube, LinkedIn, Axe...",
+    "words": [
+      {
+        "word": " Jeg",
+        "start": 4.81,
+        "end": 4.91,
+        "probability": 0.98
+      },
+      {
+        "word": " skulle",
+        "start": 4.91,
+        "end": 5.07,
+        "probability": 0.94
+      },
+      {
+        "word": " ha",
+        "start": 5.07,
+        "end": 5.21,
+        "probability": 0.55
+      },
+      {
+        "word": " startet",
+        "start": 5.21,
+        "end": 5.35,
+        "probability": 0.92
+      },
+      {
+        "word": " å",
+        "start": 5.35,
+        "end": 5.49,
+        "probability": 0.72
+      },
+      {
+        "word": " poste",
+        "start": 5.49,
+        "end": 5.71,
+        "probability": 0.97
+      },
+      {
+        "word": " videoer",
+        "start": 5.71,
+        "end": 5.97,
+        "probability": 0.91
+      },
+      {
+        "word": " på",
+        "start": 5.97,
+        "end": 6.05,
+        "probability": 0.98
+      },
+      {
+        "word": " Instagram,",
+        "start": 6.05,
+        "end": 6.41,
+        "probability": 0.79
+      },
+      {
+        "word": " TikTok,",
+        "start": 6.53,
+        "end": 6.89,
+        "probability": 0.91
+      },
+      {
+        "word": " YouTube,",
+        "start": 7.23,
+        "end": 7.63,
+        "probability": 0.48
+      },
+      {
+        "word": " LinkedIn,",
+        "start": 7.87,
+        "end": 8.31,
+        "probability": 0.84
+      },
+      {
+        "word": " Axe...",
+        "start": 8.73,
+        "end": 9.61,
+        "probability": 0.49
+      }
+    ]
+  },
+  {
+    "start": 9.61,
+    "end": 11.65,
+    "text": "Helt... Ja, kanskje etter et halvt år siden.",
+    "words": [
+      {
+        "word": " Helt...",
+        "start": 9.61,
+        "end": 10.07,
+        "probability": 0.58
+      },
+      {
+        "word": " Ja,",
+        "start": 10.07,
+        "end": 10.29,
+        "probability": 0.42
+      },
+      {
+        "word": " kanskje",
+        "start": 10.67,
+        "end": 10.85,
+        "probability": 0.95
+      },
+      {
+        "word": " etter",
+        "start": 10.85,
+        "end": 11.15,
+        "probability": 0.62
+      },
+      {
+        "word": " et",
+        "start": 11.15,
+        "end": 11.19,
+        "probability": 0.61
+      },
+      {
+        "word": " halvt",
+        "start": 11.19,
+        "end": 11.25,
+        "probability": 0.7
+      },
+      {
+        "word": " år",
+        "start": 11.25,
+        "end": 11.33,
+        "probability": 0.99
+      },
+      {
+        "word": " siden.",
+        "start": 11.33,
+        "end": 11.65,
+        "probability": 0.99
+      }
+    ]
+  },
+  {
+    "start": 11.95,
+    "end": 13.81,
+    "text": "Jeg kjøpte meg et kamera, hvis dere vil se.",
+    "words": [
+      {
+        "word": " Jeg",
+        "start": 11.95,
+        "end": 11.99,
+        "probability": 0.98
+      },
+      {
+        "word": " kjøpte",
+        "start": 11.99,
+        "end": 12.13,
+        "probability": 0.91
+      },
+      {
+        "word": " meg",
+        "start": 12.13,
+        "end": 12.25,
+        "probability": 0.99
+      },
+      {
+        "word": " et",
+        "start": 12.25,
+        "end": 12.33,
+        "probability": 0.93
+      },
+      {
+        "word": " kamera,",
+        "start": 12.33,
+        "end": 12.71,
+        "probability": 1.0
+      },
+      {
+        "word": " hvis",
+        "start": 13.17,
+        "end": 13.45,
+        "probability": 0.89
+      },
+      {
+        "word": " dere",
+        "start": 13.45,
+        "end": 13.55,
+        "probability": 0.82
+      },
+      {
+        "word": " vil",
+        "start": 13.55,
+        "end": 13.67,
+        "probability": 0.71
+      },
+      {
+        "word": " se.",
+        "start": 13.67,
+        "end": 13.81,
+        "probability": 0.4
+      }
+    ]
+  },
+  {
+    "start": 16.37,
+    "end": 17.51,
+    "text": "Jeg kjøpte meg et kamera.",
+    "words": [
+      {
+        "word": " Jeg",
+        "start": 16.37,
+        "end": 16.51,
+        "probability": 0.96
+      },
+      {
+        "word": " kjøpte",
+        "start": 16.51,
+        "end": 16.65,
+        "probability": 0.99
+      },
+      {
+        "word": " meg",
+        "start": 16.65,
+        "end": 16.77,
+        "probability": 0.99
+      },
+      {
+        "word": " et",
+        "start": 16.77,
+        "end": 16.81,
+        "probability": 0.66
+      },
+      {
+        "word": " kamera.",
+        "start": 16.81,
+        "end": 17.51,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "start": 18.15,
+    "end": 19.71,
+    "text": "Til 30 000 pluss.",
+    "words": [
+      {
+        "word": " Til",
+        "start": 18.15,
+        "end": 18.67,
+        "probability": 0.35
+      },
+      {
+        "word": " 30",
+        "start": 18.67,
+        "end": 18.85,
+        "probability": 0.66
+      },
+      {
+        "word": " 000",
+        "start": 18.85,
+        "end": 19.11,
+        "probability": 0.45
+      },
+      {
+        "word": " pluss.",
+        "start": 19.11,
+        "end": 19.71,
+        "probability": 0.47
+      }
+    ]
+  },
+  {
+    "start": 20.15,
+    "end": 24.53,
+    "text": "Og det er ikke inkludert linse, ikke inkludert...",
+    "words": [
+      {
+        "word": " Og",
+        "start": 20.15,
+        "end": 20.25,
+        "probability": 0.66
+      },
+      {
+        "word": " det",
+        "start": 20.25,
+        "end": 20.51,
+        "probability": 0.99
+      },
+      {
+        "word": " er",
+        "start": 20.51,
+        "end": 20.51,
+        "probability": 0.93
+      },
+      {
+        "word": " ikke",
+        "start": 20.51,
+        "end": 20.79,
+        "probability": 0.97
+      },
+      {
+        "word": " inkludert",
+        "start": 20.79,
+        "end": 21.13,
+        "probability": 0.98
+      },
+      {
+        "word": " linse,",
+        "start": 21.13,
+        "end": 21.55,
+        "probability": 0.79
+      },
+      {
+        "word": " ikke",
+        "start": 21.93,
+        "end": 22.07,
+        "probability": 0.97
+      },
+      {
+        "word": " inkludert...",
+        "start": 22.07,
+        "end": 24.53,
+        "probability": 0.89
+      }
+    ]
+  },
+  {
+    "start": 24.53,
+    "end": 25.55,
+    "text": "Høytaler, ja. Nei.",
+    "words": [
+      {
+        "word": " Høytaler,",
+        "start": 24.53,
+        "end": 25.01,
+        "probability": 0.76
+      },
+      {
+        "word": " ja.",
+        "start": 25.17,
+        "end": 25.27,
+        "probability": 0.73
+      },
+      {
+        "word": " Nei.",
+        "start": 25.35,
+        "end": 25.55,
+        "probability": 0.99
+      }
+    ]
+  },
+  {
+    "start": 25.61,
+    "end": 28.89,
+    "text": "Ikke inkludert linse, ikke inkludert mikrofoner.",
+    "words": [
+      {
+        "word": " Ikke",
+        "start": 25.61,
+        "end": 25.79,
+        "probability": 0.95
+      },
+      {
+        "word": " inkludert",
+        "start": 25.79,
+        "end": 26.17,
+        "probability": 1.0
+      },
+      {
+        "word": " linse,",
+        "start": 26.17,
+        "end": 26.51,
+        "probability": 0.97
+      },
+      {
+        "word": " ikke",
+        "start": 26.65,
+        "end": 26.77,
+        "probability": 0.99
+      },
+      {
+        "word": " inkludert",
+        "start": 26.77,
+        "end": 27.79,
+        "probability": 1.0
+      },
+      {
+        "word": " mikrofoner.",
+        "start": 27.79,
+        "end": 28.89,
+        "probability": 0.92
+      }
+    ]
+  },
+  {
+    "start": 31.15,
+    "end": 31.67,
+    "text": "Og...",
+    "words": [
+      {
+        "word": " Og...",
+        "start": 31.15,
+        "end": 31.67,
+        "probability": 0.85
+      }
+    ]
+  },
+  {
+    "start": 32.61,
+    "end": 33.67,
+    "text": "Også videre og spørre, ja.",
+    "words": [
+      {
+        "word": " Også",
+        "start": 32.61,
+        "end": 32.93,
+        "probability": 0.28
+      },
+      {
+        "word": " videre",
+        "start": 32.93,
+        "end": 33.09,
+        "probability": 0.89
+      },
+      {
+        "word": " og",
+        "start": 33.09,
+        "end": 33.13,
+        "probability": 0.28
+      },
+      {
+        "word": " spørre,",
+        "start": 33.13,
+        "end": 33.29,
+        "probability": 0.38
+      },
+      {
+        "word": " ja.",
+        "start": 33.29,
+        "end": 33.67,
+        "probability": 0.68
+      }
+    ]
+  },
+  {
+    "start": 34.23,
+    "end": 35.23,
+    "text": "Don't mind my mess.",
+    "words": [
+      {
+        "word": " Don't",
+        "start": 34.23,
+        "end": 34.45,
+        "probability": 0.71
+      },
+      {
+        "word": " mind",
+        "start": 34.45,
+        "end": 34.63,
+        "probability": 0.97
+      },
+      {
+        "word": " my",
+        "start": 34.63,
+        "end": 34.81,
+        "probability": 0.96
+      },
+      {
+        "word": " mess.",
+        "start": 34.81,
+        "end": 35.23,
+        "probability": 0.99
+      }
+    ]
+  },
+  {
+    "start": 42.25,
+    "end": 43.87,
+    "text": "Men hva er det jeg gjør i stedet for? Nei.",
+    "words": [
+      {
+        "word": " Men",
+        "start": 42.25,
+        "end": 42.33,
+        "probability": 0.7
+      },
+      {
+        "word": " hva",
+        "start": 42.33,
+        "end": 42.53,
+        "probability": 0.91
+      },
+      {
+        "word": " er",
+        "start": 42.53,
+        "end": 42.63,
+        "probability": 0.46
+      },
+      {
+        "word": " det",
+        "start": 42.63,
+        "end": 42.67,
+        "probability": 0.96
+      },
+      {
+        "word": " jeg",
+        "start": 42.67,
+        "end": 42.71,
+        "probability": 0.99
+      },
+      {
+        "word": " gjør",
+        "start": 42.71,
+        "end": 42.87,
+        "probability": 0.91
+      },
+      {
+        "word": " i",
+        "start": 42.87,
+        "end": 42.99,
+        "probability": 0.6
+      },
+      {
+        "word": " stedet",
+        "start": 42.99,
+        "end": 43.09,
+        "probability": 0.72
+      },
+      {
+        "word": " for?",
+        "start": 43.09,
+        "end": 43.27,
+        "probability": 0.91
+      },
+      {
+        "word": " Nei.",
+        "start": 43.55,
+        "end": 43.87,
+        "probability": 0.96
+      }
+    ]
+  },
+  {
+    "start": 44.03,
+    "end": 46.17,
+    "text": "Jeg prøver å automatisere content creation.",
+    "words": [
+      {
+        "word": " Jeg",
+        "start": 44.03,
+        "end": 44.05,
+        "probability": 0.9
+      },
+      {
+        "word": " prøver",
+        "start": 44.05,
+        "end": 44.25,
+        "probability": 0.99
+      },
+      {
+        "word": " å",
+        "start": 44.25,
+        "end": 44.49,
+        "probability": 0.99
+      },
+      {
+        "word": " automatisere",
+        "start": 44.49,
+        "end": 45.45,
+        "probability": 0.98
+      },
+      {
+        "word": " content",
+        "start": 45.45,
+        "end": 45.77,
+        "probability": 0.46
+      },
+      {
+        "word": " creation.",
+        "start": 45.77,
+        "end": 46.17,
+        "probability": 0.94
+      }
+    ]
+  },
+  {
+    "start": 46.71,
+    "end": 49.09,
+    "text": "Nå er jeg på å lage en AI-bott, som jobber på Slack.",
+    "words": [
+      {
+        "word": " Nå",
+        "start": 46.71,
+        "end": 46.81,
+        "probability": 0.6
+      },
+      {
+        "word": " er",
+        "start": 46.81,
+        "end": 46.93,
+        "probability": 0.9
+      },
+      {
+        "word": " jeg",
+        "start": 46.93,
+        "end": 46.93,
+        "probability": 0.93
+      },
+      {
+        "word": " på",
+        "start": 46.93,
+        "end": 46.99,
+        "probability": 0.99
+      },
+      {
+        "word": " å",
+        "start": 46.99,
+        "end": 47.05,
+        "probability": 0.81
+      },
+      {
+        "word": " lage",
+        "start": 47.05,
+        "end": 47.21,
+        "probability": 1.0
+      },
+      {
+        "word": " en",
+        "start": 47.21,
+        "end": 47.49,
+        "probability": 0.84
+      },
+      {
+        "word": " AI",
+        "start": 47.49,
+        "end": 47.81,
+        "probability": 0.98
+      },
+      {
+        "word": "-bott,",
+        "start": 47.81,
+        "end": 48.13,
+        "probability": 0.74
+      },
+      {
+        "word": " som",
+        "start": 48.33,
+        "end": 48.39,
+        "probability": 0.97
+      },
+      {
+        "word": " jobber",
+        "start": 48.39,
+        "end": 48.61,
+        "probability": 0.98
+      },
+      {
+        "word": " på",
+        "start": 48.61,
+        "end": 48.79,
+        "probability": 1.0
+      },
+      {
+        "word": " Slack.",
+        "start": 48.79,
+        "end": 49.09,
+        "probability": 0.81
+      }
+    ]
+  },
+  {
+    "start": 50.03,
+    "end": 53.01,
+    "text": "Og jobber på en server, som skal gjøre at hver gang jeg filmer...",
+    "words": [
+      {
+        "word": " Og",
+        "start": 50.03,
+        "end": 50.07,
+        "probability": 0.61
+      },
+      {
+        "word": " jobber",
+        "start": 50.07,
+        "end": 50.21,
+        "probability": 0.93
+      },
+      {
+        "word": " på",
+        "start": 50.21,
+        "end": 50.33,
+        "probability": 1.0
+      },
+      {
+        "word": " en",
+        "start": 50.33,
+        "end": 50.41,
+        "probability": 0.97
+      },
+      {
+        "word": " server,",
+        "start": 50.41,
+        "end": 50.71,
+        "probability": 0.98
+      },
+      {
+        "word": " som",
+        "start": 50.83,
+        "end": 50.93,
+        "probability": 0.97
+      },
+      {
+        "word": " skal",
+        "start": 50.93,
+        "end": 51.11,
+        "probability": 0.99
+      },
+      {
+        "word": " gjøre",
+        "start": 51.11,
+        "end": 51.27,
+        "probability": 0.98
+      },
+      {
+        "word": " at",
+        "start": 51.27,
+        "end": 52.11,
+        "probability": 0.82
+      },
+      {
+        "word": " hver",
+        "start": 52.11,
+        "end": 52.41,
+        "probability": 0.87
+      },
+      {
+        "word": " gang",
+        "start": 52.41,
+        "end": 52.51,
+        "probability": 0.99
+      },
+      {
+        "word": " jeg",
+        "start": 52.51,
+        "end": 52.61,
+        "probability": 1.0
+      },
+      {
+        "word": " filmer...",
+        "start": 52.61,
+        "end": 53.01,
+        "probability": 0.67
+      }
+    ]
+  },
+  {
+    "start": 56.08,
+    "end": 57.28,
+    "text": "Når jeg filmer content...",
+    "words": [
+      {
+        "word": " Når",
+        "start": 56.08,
+        "end": 56.4,
+        "probability": 0.85
+      },
+      {
+        "word": " jeg",
+        "start": 56.4,
+        "end": 56.5,
+        "probability": 1.0
+      },
+      {
+        "word": " filmer",
+        "start": 56.5,
+        "end": 56.82,
+        "probability": 0.97
+      },
+      {
+        "word": " content...",
+        "start": 56.82,
+        "end": 57.28,
+        "probability": 0.78
+      }
+    ]
+  },
+  {
+    "start": 58.52,
+    "end": 58.84,
+    "text": "Ok.",
+    "words": [
+      {
+        "word": " Ok.",
+        "start": 58.52,
+        "end": 58.84,
+        "probability": 0.33
+      }
+    ]
+  },
+  {
+    "start": 60.24,
+    "end": 61.48,
+    "text": "Jeg starter for nytt.",
+    "words": [
+      {
+        "word": " Jeg",
+        "start": 60.24,
+        "end": 60.3,
+        "probability": 0.38
+      },
+      {
+        "word": " starter",
+        "start": 60.3,
+        "end": 60.38,
+        "probability": 0.78
+      },
+      {
+        "word": " for",
+        "start": 60.38,
+        "end": 60.5,
+        "probability": 0.54
+      },
+      {
+        "word": " nytt.",
+        "start": 60.5,
+        "end": 61.48,
+        "probability": 0.82
+      }
+    ]
+  },
+  {
+    "start": 61.94,
+    "end": 62.9,
+    "text": "Så hva er det jeg egentlig er helt på med?",
+    "words": [
+      {
+        "word": " Så",
+        "start": 61.94,
+        "end": 62.08,
+        "probability": 0.98
+      },
+      {
+        "word": " hva",
+        "start": 62.08,
+        "end": 62.22,
+        "probability": 0.97
+      },
+      {
+        "word": " er",
+        "start": 62.22,
+        "end": 62.32,
+        "probability": 0.89
+      },
+      {
+        "word": " det",
+        "start": 62.32,
+        "end": 62.34,
+        "probability": 0.98
+      },
+      {
+        "word": " jeg",
+        "start": 62.34,
+        "end": 62.4,
+        "probability": 0.97
+      },
+      {
+        "word": " egentlig",
+        "start": 62.4,
+        "end": 62.56,
+        "probability": 0.95
+      },
+      {
+        "word": " er",
+        "start": 62.56,
+        "end": 62.64,
+        "probability": 0.49
+      },
+      {
+        "word": " helt",
+        "start": 62.64,
+        "end": 62.7,
+        "probability": 0.64
+      },
+      {
+        "word": " på",
+        "start": 62.7,
+        "end": 62.78,
+        "probability": 0.99
+      },
+      {
+        "word": " med?",
+        "start": 62.78,
+        "end": 62.9,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "start": 63.78,
+    "end": 66.52,
+    "text": "Jeg er på å lage en AI-bott, som jobber på Slack.",
+    "words": [
+      {
+        "word": " Jeg",
+        "start": 63.78,
+        "end": 63.9,
+        "probability": 0.87
+      },
+      {
+        "word": " er",
+        "start": 63.9,
+        "end": 63.98,
+        "probability": 0.97
+      },
+      {
+        "word": " på",
+        "start": 63.98,
+        "end": 64.02,
+        "probability": 1.0
+      },
+      {
+        "word": " å",
+        "start": 64.02,
+        "end": 64.1,
+        "probability": 1.0
+      },
+      {
+        "word": " lage",
+        "start": 64.1,
+        "end": 64.22,
+        "probability": 1.0
+      },
+      {
+        "word": " en",
+        "start": 64.22,
+        "end": 64.42,
+        "probability": 0.97
+      },
+      {
+        "word": " AI",
+        "start": 64.42,
+        "end": 64.72,
+        "probability": 1.0
+      },
+      {
+        "word": "-bott,",
+        "start": 64.72,
+        "end": 65.16,
+        "probability": 0.95
+      },
+      {
+        "word": " som",
+        "start": 65.74,
+        "end": 65.84,
+        "probability": 0.98
+      },
+      {
+        "word": " jobber",
+        "start": 65.84,
+        "end": 66.0,
+        "probability": 0.99
+      },
+      {
+        "word": " på",
+        "start": 66.0,
+        "end": 66.14,
+        "probability": 1.0
+      },
+      {
+        "word": " Slack.",
+        "start": 66.14,
+        "end": 66.52,
+        "probability": 0.97
+      }
+    ]
+  },
+  {
+    "start": 66.76,
+    "end": 67.42,
+    "text": "Hva er det den gjør?",
+    "words": [
+      {
+        "word": " Hva",
+        "start": 66.76,
+        "end": 66.94,
+        "probability": 0.99
+      },
+      {
+        "word": " er",
+        "start": 66.94,
+        "end": 67.02,
+        "probability": 0.66
+      },
+      {
+        "word": " det",
+        "start": 67.02,
+        "end": 67.02,
+        "probability": 0.97
+      },
+      {
+        "word": " den",
+        "start": 67.02,
+        "end": 67.12,
+        "probability": 0.83
+      },
+      {
+        "word": " gjør?",
+        "start": 67.12,
+        "end": 67.42,
+        "probability": 0.99
+      }
+    ]
+  },
+  {
+    "start": 67.96,
+    "end": 69.94,
+    "text": "Jo, tankegangen er at når jeg filmer en video enn her...",
+    "words": [
+      {
+        "word": " Jo,",
+        "start": 67.96,
+        "end": 68.28,
+        "probability": 0.54
+      },
+      {
+        "word": " tankegangen",
+        "start": 68.36,
+        "end": 68.68,
+        "probability": 0.72
+      },
+      {
+        "word": " er",
+        "start": 68.68,
+        "end": 68.78,
+        "probability": 0.9
+      },
+      {
+        "word": " at",
+        "start": 68.78,
+        "end": 68.8,
+        "probability": 0.91
+      },
+      {
+        "word": " når",
+        "start": 68.8,
+        "end": 68.96,
+        "probability": 0.97
+      },
+      {
+        "word": " jeg",
+        "start": 68.96,
+        "end": 69.0,
+        "probability": 0.99
+      },
+      {
+        "word": " filmer",
+        "start": 69.0,
+        "end": 69.18,
+        "probability": 0.96
+      },
+      {
+        "word": " en",
+        "start": 69.18,
+        "end": 69.32,
+        "probability": 0.8
+      },
+      {
+        "word": " video",
+        "start": 69.32,
+        "end": 69.46,
+        "probability": 0.99
+      },
+      {
+        "word": " enn",
+        "start": 69.46,
+        "end": 69.9,
+        "probability": 0.21
+      },
+      {
+        "word": " her...",
+        "start": 69.9,
+        "end": 69.94,
+        "probability": 0.46
+      }
+    ]
+  },
+  {
+    "start": 69.94,
+    "end": 71.28,
+    "text": "Så sender jeg den til AI-boten.",
+    "words": [
+      {
+        "word": " Så",
+        "start": 69.94,
+        "end": 70.14,
+        "probability": 0.63
+      },
+      {
+        "word": " sender",
+        "start": 70.14,
+        "end": 70.28,
+        "probability": 0.96
+      },
+      {
+        "word": " jeg",
+        "start": 70.28,
+        "end": 70.36,
+        "probability": 0.97
+      },
+      {
+        "word": " den",
+        "start": 70.36,
+        "end": 70.44,
+        "probability": 0.7
+      },
+      {
+        "word": " til",
+        "start": 70.44,
+        "end": 70.58,
+        "probability": 0.97
+      },
+      {
+        "word": " AI",
+        "start": 70.58,
+        "end": 70.78,
+        "probability": 0.01
+      },
+      {
+        "word": "-boten.",
+        "start": 70.78,
+        "end": 71.28,
+        "probability": 0.85
+      }
+    ]
+  },
+  {
+    "start": 71.6,
+    "end": 73.08,
+    "text": "Analyserer AI-boten.",
+    "words": [
+      {
+        "word": " Analyserer",
+        "start": 71.6,
+        "end": 71.92,
+        "probability": 0.76
+      },
+      {
+        "word": " AI",
+        "start": 71.92,
+        "end": 72.12,
+        "probability": 0.99
+      },
+      {
+        "word": "-boten.",
+        "start": 72.12,
+        "end": 73.08,
+        "probability": 0.97
+      }
+    ]
+  },
+  {
+    "start": 73.3,
+    "end": 74.34,
+    "text": "Eller assistenten min.",
+    "words": [
+      {
+        "word": " Eller",
+        "start": 73.3,
+        "end": 73.54,
+        "probability": 0.95
+      },
+      {
+        "word": " assistenten",
+        "start": 73.54,
+        "end": 74.22,
+        "probability": 0.76
+      },
+      {
+        "word": " min.",
+        "start": 74.22,
+        "end": 74.34,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "start": 75.82,
+    "end": 76.94,
+    "text": "La oss kalle den en assistent.",
+    "words": [
+      {
+        "word": " La",
+        "start": 75.82,
+        "end": 75.98,
+        "probability": 0.33
+      },
+      {
+        "word": " oss",
+        "start": 75.98,
+        "end": 76.04,
+        "probability": 0.98
+      },
+      {
+        "word": " kalle",
+        "start": 76.04,
+        "end": 76.18,
+        "probability": 0.96
+      },
+      {
+        "word": " den",
+        "start": 76.18,
+        "end": 76.28,
+        "probability": 0.95
+      },
+      {
+        "word": " en",
+        "start": 76.28,
+        "end": 76.46,
+        "probability": 0.82
+      },
+      {
+        "word": " assistent.",
+        "start": 76.46,
+        "end": 76.94,
+        "probability": 0.82
+      }
+    ]
+  },
+  {
+    "start": 77.72,
+    "end": 79.36,
+    "text": "Så analyserer jeg assistenten min.",
+    "words": [
+      {
+        "word": " Så",
+        "start": 77.72,
+        "end": 77.88,
+        "probability": 0.98
+      },
+      {
+        "word": " analyserer",
+        "start": 77.88,
+        "end": 78.26,
+        "probability": 0.82
+      },
+      {
+        "word": " jeg",
+        "start": 78.26,
+        "end": 78.4,
+        "probability": 0.83
+      },
+      {
+        "word": " assistenten",
+        "start": 78.4,
+        "end": 78.92,
+        "probability": 0.96
+      },
+      {
+        "word": " min.",
+        "start": 78.92,
+        "end": 79.36,
+        "probability": 0.99
+      }
+    ]
+  },
+  {
+    "start": 79.68,
+    "end": 80.94,
+    "text": "Alt jeg sier, hva jeg snakker om.",
+    "words": [
+      {
+        "word": " Alt",
+        "start": 79.68,
+        "end": 79.8,
+        "probability": 0.94
+      },
+      {
+        "word": " jeg",
+        "start": 79.8,
+        "end": 79.92,
+        "probability": 0.97
+      },
+      {
+        "word": " sier,",
+        "start": 79.92,
+        "end": 80.18,
+        "probability": 0.97
+      },
+      {
+        "word": " hva",
+        "start": 80.26,
+        "end": 80.4,
+        "probability": 0.98
+      },
+      {
+        "word": " jeg",
+        "start": 80.4,
+        "end": 80.46,
+        "probability": 0.99
+      },
+      {
+        "word": " snakker",
+        "start": 80.46,
+        "end": 80.66,
+        "probability": 0.99
+      },
+      {
+        "word": " om.",
+        "start": 80.66,
+        "end": 80.94,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "start": 81.74,
+    "end": 83.34,
+    "text": "Også rediger jeg den. Klipper jeg sammen.",
+    "words": [
+      {
+        "word": " Også",
+        "start": 81.74,
+        "end": 82.06,
+        "probability": 0.74
+      },
+      {
+        "word": " rediger",
+        "start": 82.06,
+        "end": 82.38,
+        "probability": 0.67
+      },
+      {
+        "word": " jeg",
+        "start": 82.38,
+        "end": 82.46,
+        "probability": 0.77
+      },
+      {
+        "word": " den.",
+        "start": 82.46,
+        "end": 82.54,
+        "probability": 0.56
+      },
+      {
+        "word": " Klipper",
+        "start": 82.64,
+        "end": 82.88,
+        "probability": 0.93
+      },
+      {
+        "word": " jeg",
+        "start": 82.88,
+        "end": 82.96,
+        "probability": 0.96
+      },
+      {
+        "word": " sammen.",
+        "start": 82.96,
+        "end": 83.34,
+        "probability": 0.99
+      }
+    ]
+  },
+  {
+    "start": 83.5,
+    "end": 84.6,
+    "text": "På en nattig måte.",
+    "words": [
+      {
+        "word": " På",
+        "start": 83.5,
+        "end": 83.56,
+        "probability": 0.95
+      },
+      {
+        "word": " en",
+        "start": 83.56,
+        "end": 83.64,
+        "probability": 0.95
+      },
+      {
+        "word": " nattig",
+        "start": 83.64,
+        "end": 83.82,
+        "probability": 0.44
+      },
+      {
+        "word": " måte.",
+        "start": 83.82,
+        "end": 84.6,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "start": 84.76,
+    "end": 85.54,
+    "text": "Og finner ut hva som er viktig.",
+    "words": [
+      {
+        "word": " Og",
+        "start": 84.76,
+        "end": 84.82,
+        "probability": 0.3
+      },
+      {
+        "word": " finner",
+        "start": 84.82,
+        "end": 84.9,
+        "probability": 0.95
+      },
+      {
+        "word": " ut",
+        "start": 84.9,
+        "end": 85.04,
+        "probability": 1.0
+      },
+      {
+        "word": " hva",
+        "start": 85.04,
+        "end": 85.2,
+        "probability": 0.99
+      },
+      {
+        "word": " som",
+        "start": 85.2,
+        "end": 85.26,
+        "probability": 1.0
+      },
+      {
+        "word": " er",
+        "start": 85.26,
+        "end": 85.32,
+        "probability": 0.99
+      },
+      {
+        "word": " viktig.",
+        "start": 85.32,
+        "end": 85.54,
+        "probability": 0.99
+      }
+    ]
+  },
+  {
+    "start": 86.58,
+    "end": 87.52,
+    "text": "Legger på tekst.",
+    "words": [
+      {
+        "word": " Legger",
+        "start": 86.58,
+        "end": 86.74,
+        "probability": 0.65
+      },
+      {
+        "word": " på",
+        "start": 86.74,
+        "end": 86.86,
+        "probability": 0.92
+      },
+      {
+        "word": " tekst.",
+        "start": 86.86,
+        "end": 87.52,
+        "probability": 0.95
+      }
+    ]
+  },
+  {
+    "start": 88.24,
+    "end": 88.88,
+    "text": "Også... ja.",
+    "words": [
+      {
+        "word": " Også...",
+        "start": 88.24,
+        "end": 88.56,
+        "probability": 0.7
+      },
+      {
+        "word": " ja.",
+        "start": 88.56,
+        "end": 88.88,
+        "probability": 0.44
+      }
+    ]
+  },
+  {
+    "start": 88.96,
+    "end": 90.34,
+    "text": "Poster den på sosialmedia for meg.",
+    "words": [
+      {
+        "word": " Poster",
+        "start": 88.96,
+        "end": 89.16,
+        "probability": 0.74
+      },
+      {
+        "word": " den",
+        "start": 89.16,
+        "end": 89.26,
+        "probability": 0.7
+      },
+      {
+        "word": " på",
+        "start": 89.26,
+        "end": 89.4,
+        "probability": 0.99
+      },
+      {
+        "word": " sosialmedia",
+        "start": 89.4,
+        "end": 89.9,
+        "probability": 0.75
+      },
+      {
+        "word": " for",
+        "start": 89.9,
+        "end": 90.14,
+        "probability": 0.91
+      },
+      {
+        "word": " meg.",
+        "start": 90.14,
+        "end": 90.34,
+        "probability": 0.95
+      }
+    ]
+  },
+  {
+    "start": 90.48,
+    "end": 91.16,
+    "text": "Det er det som er tankegangen.",
+    "words": [
+      {
+        "word": " Det",
+        "start": 90.48,
+        "end": 90.62,
+        "probability": 0.96
+      },
+      {
+        "word": " er",
+        "start": 90.62,
+        "end": 90.62,
+        "probability": 0.99
+      },
+      {
+        "word": " det",
+        "start": 90.62,
+        "end": 90.7,
+        "probability": 0.95
+      },
+      {
+        "word": " som",
+        "start": 90.7,
+        "end": 90.78,
+        "probability": 0.9
+      },
+      {
+        "word": " er",
+        "start": 90.78,
+        "end": 90.82,
+        "probability": 0.8
+      },
+      {
+        "word": " tankegangen.",
+        "start": 90.82,
+        "end": 91.16,
+        "probability": 0.99
+      }
+    ]
+  },
+  {
+    "start": 91.24,
+    "end": 92.82,
+    "text": "Så hvis den videoen her ser bra ut...",
+    "words": [
+      {
+        "word": " Så",
+        "start": 91.24,
+        "end": 91.34,
+        "probability": 0.93
+      },
+      {
+        "word": " hvis",
+        "start": 91.34,
+        "end": 91.44,
+        "probability": 0.99
+      },
+      {
+        "word": " den",
+        "start": 91.44,
+        "end": 91.56,
+        "probability": 0.81
+      },
+      {
+        "word": " videoen",
+        "start": 91.56,
+        "end": 91.76,
+        "probability": 0.83
+      },
+      {
+        "word": " her",
+        "start": 91.76,
+        "end": 91.88,
+        "probability": 0.86
+      },
+      {
+        "word": " ser",
+        "start": 91.88,
+        "end": 91.96,
+        "probability": 0.98
+      },
+      {
+        "word": " bra",
+        "start": 91.96,
+        "end": 92.14,
+        "probability": 0.99
+      },
+      {
+        "word": " ut...",
+        "start": 92.14,
+        "end": 92.82,
+        "probability": 0.64
+      }
+    ]
+  },
+  {
+    "start": 92.82,
+    "end": 94.78,
+    "text": "Så er det ikke min grunn.",
+    "words": [
+      {
+        "word": " Så",
+        "start": 92.82,
+        "end": 92.96,
+        "probability": 0.82
+      },
+      {
+        "word": " er",
+        "start": 92.96,
+        "end": 93.14,
+        "probability": 0.99
+      },
+      {
+        "word": " det",
+        "start": 93.14,
+        "end": 93.32,
+        "probability": 0.99
+      },
+      {
+        "word": " ikke",
+        "start": 93.32,
+        "end": 93.66,
+        "probability": 0.98
+      },
+      {
+        "word": " min",
+        "start": 93.66,
+        "end": 94.56,
+        "probability": 0.95
+      },
+      {
+        "word": " grunn.",
+        "start": 94.56,
+        "end": 94.78,
+        "probability": 0.9
+      }
+    ]
+  },
+  {
+    "start": 94.94,
+    "end": 96.08,
+    "text": "Da er det...",
+    "words": [
+      {
+        "word": " Da",
+        "start": 94.94,
+        "end": 95.0,
+        "probability": 0.85
+      },
+      {
+        "word": " er",
+        "start": 95.0,
+        "end": 95.18,
+        "probability": 0.97
+      },
+      {
+        "word": " det...",
+        "start": 95.18,
+        "end": 96.08,
+        "probability": 0.88
+      }
+    ]
+  },
+  {
+    "start": 96.08,
+    "end": 98.24,
+    "text": "Så hvis videoen her ser bra ut...",
+    "words": [
+      {
+        "word": " Så",
+        "start": 96.08,
+        "end": 96.26,
+        "probability": 0.66
+      },
+      {
+        "word": " hvis",
+        "start": 96.26,
+        "end": 96.38,
+        "probability": 0.99
+      },
+      {
+        "word": " videoen",
+        "start": 96.38,
+        "end": 96.66,
+        "probability": 0.97
+      },
+      {
+        "word": " her",
+        "start": 96.66,
+        "end": 96.74,
+        "probability": 0.89
+      },
+      {
+        "word": " ser",
+        "start": 96.74,
+        "end": 96.88,
+        "probability": 0.98
+      },
+      {
+        "word": " bra",
+        "start": 96.88,
+        "end": 97.06,
+        "probability": 0.99
+      },
+      {
+        "word": " ut...",
+        "start": 97.06,
+        "end": 98.24,
+        "probability": 0.54
+      }
+    ]
+  },
+  {
+    "start": 98.24,
+    "end": 99.82,
+    "text": "Så er det ikke jeg som burde få kreds.",
+    "words": [
+      {
+        "word": " Så",
+        "start": 98.24,
+        "end": 98.36,
+        "probability": 0.71
+      },
+      {
+        "word": " er",
+        "start": 98.36,
+        "end": 98.44,
+        "probability": 0.93
+      },
+      {
+        "word": " det",
+        "start": 98.44,
+        "end": 98.46,
+        "probability": 0.99
+      },
+      {
+        "word": " ikke",
+        "start": 98.46,
+        "end": 98.7,
+        "probability": 0.99
+      },
+      {
+        "word": " jeg",
+        "start": 98.7,
+        "end": 98.84,
+        "probability": 0.69
+      },
+      {
+        "word": " som",
+        "start": 98.84,
+        "end": 98.94,
+        "probability": 0.99
+      },
+      {
+        "word": " burde",
+        "start": 98.94,
+        "end": 99.08,
+        "probability": 0.62
+      },
+      {
+        "word": " få",
+        "start": 99.08,
+        "end": 99.2,
+        "probability": 0.94
+      },
+      {
+        "word": " kreds.",
+        "start": 99.2,
+        "end": 99.82,
+        "probability": 0.65
+      }
+    ]
+  },
+  {
+    "start": 101.56,
+    "end": 102.94,
+    "text": "Så hvis videoen her ser bra ut...",
+    "words": [
+      {
+        "word": " Så",
+        "start": 101.56,
+        "end": 101.64,
+        "probability": 0.9
+      },
+      {
+        "word": " hvis",
+        "start": 101.64,
+        "end": 101.78,
+        "probability": 1.0
+      },
+      {
+        "word": " videoen",
+        "start": 101.78,
+        "end": 102.06,
+        "probability": 1.0
+      },
+      {
+        "word": " her",
+        "start": 102.06,
+        "end": 102.12,
+        "probability": 0.94
+      },
+      {
+        "word": " ser",
+        "start": 102.12,
+        "end": 102.2,
+        "probability": 0.99
+      },
+      {
+        "word": " bra",
+        "start": 102.2,
+        "end": 102.38,
+        "probability": 1.0
+      },
+      {
+        "word": " ut...",
+        "start": 102.38,
+        "end": 102.94,
+        "probability": 0.74
+      }
+    ]
+  },
+  {
+    "start": 102.94,
+    "end": 105.08,
+    "text": "Så klart ikke jeg. Men...",
+    "words": [
+      {
+        "word": " Så",
+        "start": 102.94,
+        "end": 103.06,
+        "probability": 0.73
+      },
+      {
+        "word": " klart",
+        "start": 103.06,
+        "end": 103.2,
+        "probability": 0.82
+      },
+      {
+        "word": " ikke",
+        "start": 103.2,
+        "end": 103.38,
+        "probability": 0.84
+      },
+      {
+        "word": " jeg.",
+        "start": 103.38,
+        "end": 103.56,
+        "probability": 0.97
+      },
+      {
+        "word": " Men...",
+        "start": 104.8,
+        "end": 105.08,
+        "probability": 0.79
+      }
+    ]
+  },
+  {
+    "start": 105.08,
+    "end": 105.38,
+    "text": "Ok.",
+    "words": [
+      {
+        "word": " Ok.",
+        "start": 105.08,
+        "end": 105.38,
+        "probability": 0.46
+      }
+    ]
+  },
+  {
+    "start": 106.38,
+    "end": 108.18,
+    "text": "Så hvis videoen her ser bra ut...",
+    "words": [
+      {
+        "word": " Så",
+        "start": 106.38,
+        "end": 106.56,
+        "probability": 0.98
+      },
+      {
+        "word": " hvis",
+        "start": 106.56,
+        "end": 106.72,
+        "probability": 1.0
+      },
+      {
+        "word": " videoen",
+        "start": 106.72,
+        "end": 107.12,
+        "probability": 1.0
+      },
+      {
+        "word": " her",
+        "start": 107.12,
+        "end": 107.38,
+        "probability": 0.95
+      },
+      {
+        "word": " ser",
+        "start": 107.38,
+        "end": 107.52,
+        "probability": 0.98
+      },
+      {
+        "word": " bra",
+        "start": 107.52,
+        "end": 107.72,
+        "probability": 1.0
+      },
+      {
+        "word": " ut...",
+        "start": 107.72,
+        "end": 108.18,
+        "probability": 0.68
+      }
+    ]
+  },
+  {
+    "start": 108.18,
+    "end": 109.32,
+    "text": "Så er det ikke jeg som burde få kreds.",
+    "words": [
+      {
+        "word": " Så",
+        "start": 108.18,
+        "end": 108.26,
+        "probability": 0.95
+      },
+      {
+        "word": " er",
+        "start": 108.26,
+        "end": 108.34,
+        "probability": 0.99
+      },
+      {
+        "word": " det",
+        "start": 108.34,
+        "end": 108.38,
+        "probability": 1.0
+      },
+      {
+        "word": " ikke",
+        "start": 108.38,
+        "end": 108.52,
+        "probability": 1.0
+      },
+      {
+        "word": " jeg",
+        "start": 108.52,
+        "end": 108.7,
+        "probability": 0.99
+      },
+      {
+        "word": " som",
+        "start": 108.7,
+        "end": 108.8,
+        "probability": 1.0
+      },
+      {
+        "word": " burde",
+        "start": 108.8,
+        "end": 108.94,
+        "probability": 0.99
+      },
+      {
+        "word": " få",
+        "start": 108.94,
+        "end": 109.04,
+        "probability": 0.99
+      },
+      {
+        "word": " kreds.",
+        "start": 109.04,
+        "end": 109.32,
+        "probability": 1.0
+      }
+    ]
+  },
+  {
+    "start": 109.38,
+    "end": 110.14,
+    "text": "Da er det A1.",
+    "words": [
+      {
+        "word": " Da",
+        "start": 109.38,
+        "end": 109.42,
+        "probability": 0.98
+      },
+      {
+        "word": " er",
+        "start": 109.42,
+        "end": 109.54,
+        "probability": 1.0
+      },
+      {
+        "word": " det",
+        "start": 109.54,
+        "end": 109.64,
+        "probability": 0.95
+      },
+      {
+        "word": " A1.",
+        "start": 109.64,
+        "end": 110.14,
+        "probability": 0.55
+      }
+    ]
+  },
+  {
+    "start": 110.58,
+    "end": 112.02,
+    "text": "For jeg tog bare nettopp telefonen.",
+    "words": [
+      {
+        "word": " For",
+        "start": 110.58,
+        "end": 110.68,
+        "probability": 0.74
+      },
+      {
+        "word": " jeg",
+        "start": 110.68,
+        "end": 110.84,
+        "probability": 0.95
+      },
+      {
+        "word": " tog",
+        "start": 110.84,
+        "end": 111.1,
+        "probability": 0.76
+      },
+      {
+        "word": " bare",
+        "start": 111.1,
+        "end": 111.28,
+        "probability": 0.96
+      },
+      {
+        "word": " nettopp",
+        "start": 111.28,
+        "end": 111.54,
+        "probability": 0.87
+      },
+      {
+        "word": " telefonen.",
+        "start": 111.54,
+        "end": 112.02,
+        "probability": 0.89
+      }
+    ]
+  },
+  {
+    "start": 112.08,
+    "end": 112.94,
+    "text": "Og skulle sjekke om det funker.",
+    "words": [
+      {
+        "word": " Og",
+        "start": 112.08,
+        "end": 112.12,
+        "probability": 0.78
+      },
+      {
+        "word": " skulle",
+        "start": 112.12,
+        "end": 112.26,
+        "probability": 0.82
+      },
+      {
+        "word": " sjekke",
+        "start": 112.26,
+        "end": 112.46,
+        "probability": 0.9
+      },
+      {
+        "word": " om",
+        "start": 112.46,
+        "end": 112.52,
+        "probability": 0.99
+      },
+      {
+        "word": " det",
+        "start": 112.52,
+        "end": 112.62,
+        "probability": 0.81
+      },
+      {
+        "word": " funker.",
+        "start": 112.62,
+        "end": 112.94,
+        "probability": 0.6
+      }
+    ]
+  },
+  {
+    "start": 114.42,
+    "end": 115.02,
+    "text": "Nice, ok.",
+    "words": [
+      {
+        "word": " Nice,",
+        "start": 114.42,
+        "end": 114.7,
+        "probability": 0.86
+      },
+      {
+        "word": " ok.",
+        "start": 114.84,
+        "end": 115.02,
+        "probability": 0.91
+      }
+    ]
+  },
+  {
+    "start": 115.16,
+    "end": 115.56,
+    "text": "Ha det bra det.",
+    "words": [
+      {
+        "word": " Ha",
+        "start": 115.16,
+        "end": 115.28,
+        "probability": 0.34
+      },
+      {
+        "word": " det",
+        "start": 115.28,
+        "end": 115.34,
+        "probability": 1.0
+      },
+      {
+        "word": " bra",
+        "start": 115.34,
+        "end": 115.48,
+        "probability": 0.66
+      },
+      {
+        "word": " det.",
+        "start": 115.48,
+        "end": 115.56,
+        "probability": 0.36
+      }
+    ]
+  }
+]

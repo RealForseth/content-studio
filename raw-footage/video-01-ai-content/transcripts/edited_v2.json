@@ -1,0 +1,1145 @@
+[
+  {
+    "start": 0.14,
+    "end": 3.98,
+    "text": "Mitt navn er Johannes, og jeg har en tendens til å uttegne ting hele tiden.",
+    "words": [
+      {
+        "word": "Mitt",
+        "start": 0.14,
+        "end": 0.74
+      },
+      {
+        "word": "navn",
+        "start": 0.74,
+        "end": 0.88
+      },
+      {
+        "word": "er",
+        "start": 0.88,
+        "end": 0.92
+      },
+      {
+        "word": "Johannes,",
+        "start": 0.92,
+        "end": 1.22
+      },
+      {
+        "word": "og",
+        "start": 1.5,
+        "end": 1.64
+      },
+      {
+        "word": "jeg",
+        "start": 1.64,
+        "end": 2.32
+      },
+      {
+        "word": "har",
+        "start": 2.32,
+        "end": 2.5
+      },
+      {
+        "word": "en",
+        "start": 2.5,
+        "end": 2.58
+      },
+      {
+        "word": "tendens",
+        "start": 2.58,
+        "end": 2.86
+      },
+      {
+        "word": "til",
+        "start": 2.86,
+        "end": 2.96
+      },
+      {
+        "word": "å",
+        "start": 2.96,
+        "end": 2.96
+      },
+      {
+        "word": "uttegne",
+        "start": 2.96,
+        "end": 3.32
+      },
+      {
+        "word": "ting",
+        "start": 3.32,
+        "end": 3.42
+      },
+      {
+        "word": "hele",
+        "start": 3.42,
+        "end": 3.74
+      },
+      {
+        "word": "tiden.",
+        "start": 3.74,
+        "end": 3.98
+      }
+    ]
+  },
+  {
+    "start": 4.2,
+    "end": 8.3,
+    "text": "Jeg skulle ha startet å poste videoer på Instagram, TikTok, YouTube, LinkedIn, Axe.",
+    "words": [
+      {
+        "word": "Jeg",
+        "start": 4.2,
+        "end": 4.3
+      },
+      {
+        "word": "skulle",
+        "start": 4.3,
+        "end": 4.48
+      },
+      {
+        "word": "ha",
+        "start": 4.48,
+        "end": 4.62
+      },
+      {
+        "word": "startet",
+        "start": 4.62,
+        "end": 4.74
+      },
+      {
+        "word": "å",
+        "start": 4.74,
+        "end": 4.88
+      },
+      {
+        "word": "poste",
+        "start": 4.88,
+        "end": 5.1
+      },
+      {
+        "word": "videoer",
+        "start": 5.1,
+        "end": 5.38
+      },
+      {
+        "word": "på",
+        "start": 5.38,
+        "end": 5.46
+      },
+      {
+        "word": "Instagram,",
+        "start": 5.46,
+        "end": 5.82
+      },
+      {
+        "word": "TikTok,",
+        "start": 5.96,
+        "end": 6.28
+      },
+      {
+        "word": "YouTube,",
+        "start": 6.64,
+        "end": 7.04
+      },
+      {
+        "word": "LinkedIn,",
+        "start": 7.22,
+        "end": 7.68
+      },
+      {
+        "word": "Axe.",
+        "start": 8.12,
+        "end": 8.3
+      }
+    ]
+  },
+  {
+    "start": 9.08,
+    "end": 9.9,
+    "text": "Jeg kjøpte meg et kamera.",
+    "words": [
+      {
+        "word": "Jeg",
+        "start": 9.08,
+        "end": 9.1
+      },
+      {
+        "word": "kjøpte",
+        "start": 9.1,
+        "end": 9.26
+      },
+      {
+        "word": "meg",
+        "start": 9.26,
+        "end": 9.36
+      },
+      {
+        "word": "et",
+        "start": 9.36,
+        "end": 9.44
+      },
+      {
+        "word": "kamera.",
+        "start": 9.44,
+        "end": 9.9
+      }
+    ]
+  },
+  {
+    "start": 10.22,
+    "end": 10.76,
+    "text": "Hvis dere vil.",
+    "words": [
+      {
+        "word": "Hvis",
+        "start": 10.22,
+        "end": 10.58
+      },
+      {
+        "word": "dere",
+        "start": 10.58,
+        "end": 10.66
+      },
+      {
+        "word": "vil.",
+        "start": 10.66,
+        "end": 10.76
+      }
+    ]
+  },
+  {
+    "start": 11.12,
+    "end": 12.2,
+    "text": "Jeg kjøpte meg et kamera.",
+    "words": [
+      {
+        "word": "Jeg",
+        "start": 11.12,
+        "end": 11.22
+      },
+      {
+        "word": "kjøpte",
+        "start": 11.22,
+        "end": 11.36
+      },
+      {
+        "word": "meg",
+        "start": 11.36,
+        "end": 11.48
+      },
+      {
+        "word": "et",
+        "start": 11.48,
+        "end": 11.5
+      },
+      {
+        "word": "kamera.",
+        "start": 11.5,
+        "end": 12.2
+      }
+    ]
+  },
+  {
+    "start": 13.1,
+    "end": 13.94,
+    "text": "30 000 plus.",
+    "words": [
+      {
+        "word": "30",
+        "start": 13.1,
+        "end": 13.46
+      },
+      {
+        "word": "000",
+        "start": 13.46,
+        "end": 13.72
+      },
+      {
+        "word": "plus.",
+        "start": 13.72,
+        "end": 13.94
+      }
+    ]
+  },
+  {
+    "start": 14.3,
+    "end": 17.26,
+    "text": "Ikke inkludert linse, ikke inkludert mikrofoner.",
+    "words": [
+      {
+        "word": "Ikke",
+        "start": 14.3,
+        "end": 14.54
+      },
+      {
+        "word": "inkludert",
+        "start": 14.54,
+        "end": 14.9
+      },
+      {
+        "word": "linse,",
+        "start": 14.9,
+        "end": 15.22
+      },
+      {
+        "word": "ikke",
+        "start": 15.34,
+        "end": 15.48
+      },
+      {
+        "word": "inkludert",
+        "start": 15.48,
+        "end": 16.48
+      },
+      {
+        "word": "mikrofoner.",
+        "start": 16.48,
+        "end": 17.26
+      }
+    ]
+  },
+  {
+    "start": 17.66,
+    "end": 19.3,
+    "text": "Men hva er det jeg gjør i stedet for? Nei.",
+    "words": [
+      {
+        "word": "Men",
+        "start": 17.66,
+        "end": 17.78
+      },
+      {
+        "word": "hva",
+        "start": 17.78,
+        "end": 17.96
+      },
+      {
+        "word": "er",
+        "start": 17.96,
+        "end": 18.06
+      },
+      {
+        "word": "det",
+        "start": 18.06,
+        "end": 18.1
+      },
+      {
+        "word": "jeg",
+        "start": 18.1,
+        "end": 18.16
+      },
+      {
+        "word": "gjør",
+        "start": 18.16,
+        "end": 18.32
+      },
+      {
+        "word": "i",
+        "start": 18.32,
+        "end": 18.44
+      },
+      {
+        "word": "stedet",
+        "start": 18.44,
+        "end": 18.56
+      },
+      {
+        "word": "for?",
+        "start": 18.56,
+        "end": 18.76
+      },
+      {
+        "word": "Nei.",
+        "start": 18.94,
+        "end": 19.3
+      }
+    ]
+  },
+  {
+    "start": 19.46,
+    "end": 21.52,
+    "text": "Jeg prøver å automatisere content creation.",
+    "words": [
+      {
+        "word": "Jeg",
+        "start": 19.46,
+        "end": 19.5
+      },
+      {
+        "word": "prøver",
+        "start": 19.5,
+        "end": 19.7
+      },
+      {
+        "word": "å",
+        "start": 19.7,
+        "end": 19.94
+      },
+      {
+        "word": "automatisere",
+        "start": 19.94,
+        "end": 20.88
+      },
+      {
+        "word": "content",
+        "start": 20.88,
+        "end": 21.24
+      },
+      {
+        "word": "creation.",
+        "start": 21.24,
+        "end": 21.52
+      }
+    ]
+  },
+  {
+    "start": 21.66,
+    "end": 23.92,
+    "text": "Når jeg er på å lage en iBot som jobber i postele.",
+    "words": [
+      {
+        "word": "Når",
+        "start": 21.66,
+        "end": 21.78
+      },
+      {
+        "word": "jeg",
+        "start": 21.78,
+        "end": 21.84
+      },
+      {
+        "word": "er",
+        "start": 21.84,
+        "end": 21.94
+      },
+      {
+        "word": "på",
+        "start": 21.94,
+        "end": 21.94
+      },
+      {
+        "word": "å",
+        "start": 21.94,
+        "end": 22.08
+      },
+      {
+        "word": "lage",
+        "start": 22.08,
+        "end": 22.18
+      },
+      {
+        "word": "en",
+        "start": 22.18,
+        "end": 22.4
+      },
+      {
+        "word": "iBot",
+        "start": 22.4,
+        "end": 23.04
+      },
+      {
+        "word": "som",
+        "start": 23.04,
+        "end": 23.34
+      },
+      {
+        "word": "jobber",
+        "start": 23.34,
+        "end": 23.56
+      },
+      {
+        "word": "i",
+        "start": 23.56,
+        "end": 23.66
+      },
+      {
+        "word": "postele.",
+        "start": 23.66,
+        "end": 23.92
+      }
+    ]
+  },
+  {
+    "start": 24.0,
+    "end": 24.6,
+    "text": "Hva er det jeg gjør?",
+    "words": [
+      {
+        "word": "Hva",
+        "start": 24.0,
+        "end": 24.2
+      },
+      {
+        "word": "er",
+        "start": 24.2,
+        "end": 24.32
+      },
+      {
+        "word": "det",
+        "start": 24.32,
+        "end": 24.36
+      },
+      {
+        "word": "jeg",
+        "start": 24.36,
+        "end": 24.36
+      },
+      {
+        "word": "gjør?",
+        "start": 24.36,
+        "end": 24.6
+      }
+    ]
+  },
+  {
+    "start": 24.96,
+    "end": 27.9,
+    "text": "Tanken er at når jeg filmer en video her, så sender jeg den til iBoten.",
+    "words": [
+      {
+        "word": "Tanken",
+        "start": 24.96,
+        "end": 25.2
+      },
+      {
+        "word": "er",
+        "start": 25.2,
+        "end": 25.32
+      },
+      {
+        "word": "at",
+        "start": 25.32,
+        "end": 25.46
+      },
+      {
+        "word": "når",
+        "start": 25.46,
+        "end": 25.62
+      },
+      {
+        "word": "jeg",
+        "start": 25.62,
+        "end": 25.68
+      },
+      {
+        "word": "filmer",
+        "start": 25.68,
+        "end": 25.86
+      },
+      {
+        "word": "en",
+        "start": 25.86,
+        "end": 26.0
+      },
+      {
+        "word": "video",
+        "start": 26.0,
+        "end": 26.12
+      },
+      {
+        "word": "her,",
+        "start": 26.12,
+        "end": 26.58
+      },
+      {
+        "word": "så",
+        "start": 26.74,
+        "end": 26.84
+      },
+      {
+        "word": "sender",
+        "start": 26.84,
+        "end": 26.96
+      },
+      {
+        "word": "jeg",
+        "start": 26.96,
+        "end": 27.06
+      },
+      {
+        "word": "den",
+        "start": 27.06,
+        "end": 27.12
+      },
+      {
+        "word": "til",
+        "start": 27.12,
+        "end": 27.24
+      },
+      {
+        "word": "iBoten.",
+        "start": 27.24,
+        "end": 27.9
+      }
+    ]
+  },
+  {
+    "start": 27.9,
+    "end": 28.98,
+    "text": "La oss kalle den en assistent.",
+    "words": [
+      {
+        "word": "La",
+        "start": 27.9,
+        "end": 28.14
+      },
+      {
+        "word": "oss",
+        "start": 28.14,
+        "end": 28.24
+      },
+      {
+        "word": "kalle",
+        "start": 28.24,
+        "end": 28.38
+      },
+      {
+        "word": "den",
+        "start": 28.38,
+        "end": 28.5
+      },
+      {
+        "word": "en",
+        "start": 28.5,
+        "end": 28.68
+      },
+      {
+        "word": "assistent.",
+        "start": 28.68,
+        "end": 28.98
+      }
+    ]
+  },
+  {
+    "start": 29.16,
+    "end": 30.52,
+    "text": "Så analyserer jeg assistenten min.",
+    "words": [
+      {
+        "word": "Så",
+        "start": 29.16,
+        "end": 29.32
+      },
+      {
+        "word": "analyserer",
+        "start": 29.32,
+        "end": 29.7
+      },
+      {
+        "word": "jeg",
+        "start": 29.7,
+        "end": 29.82
+      },
+      {
+        "word": "assistenten",
+        "start": 29.82,
+        "end": 30.3
+      },
+      {
+        "word": "min.",
+        "start": 30.3,
+        "end": 30.52
+      }
+    ]
+  },
+  {
+    "start": 31.1,
+    "end": 31.58,
+    "text": "Alt jeg sier.",
+    "words": [
+      {
+        "word": "Alt",
+        "start": 31.1,
+        "end": 31.2
+      },
+      {
+        "word": "jeg",
+        "start": 31.2,
+        "end": 31.32
+      },
+      {
+        "word": "sier.",
+        "start": 31.32,
+        "end": 31.58
+      }
+    ]
+  },
+  {
+    "start": 31.7,
+    "end": 32.36,
+    "text": "Hva jeg snakker om.",
+    "words": [
+      {
+        "word": "Hva",
+        "start": 31.7,
+        "end": 31.8
+      },
+      {
+        "word": "jeg",
+        "start": 31.8,
+        "end": 31.86
+      },
+      {
+        "word": "snakker",
+        "start": 31.86,
+        "end": 32.08
+      },
+      {
+        "word": "om.",
+        "start": 32.08,
+        "end": 32.36
+      }
+    ]
+  },
+  {
+    "start": 32.6,
+    "end": 34.04,
+    "text": "Og så redder jeg grenen.",
+    "words": [
+      {
+        "word": "Og",
+        "start": 32.6,
+        "end": 32.7
+      },
+      {
+        "word": "så",
+        "start": 32.7,
+        "end": 33.24
+      },
+      {
+        "word": "redder",
+        "start": 33.24,
+        "end": 33.7
+      },
+      {
+        "word": "jeg",
+        "start": 33.7,
+        "end": 33.76
+      },
+      {
+        "word": "grenen.",
+        "start": 33.76,
+        "end": 34.04
+      }
+    ]
+  },
+  {
+    "start": 34.1,
+    "end": 34.76,
+    "text": "Klipper jeg sammen.",
+    "words": [
+      {
+        "word": "Klipper",
+        "start": 34.1,
+        "end": 34.3
+      },
+      {
+        "word": "jeg",
+        "start": 34.3,
+        "end": 34.4
+      },
+      {
+        "word": "sammen.",
+        "start": 34.4,
+        "end": 34.76
+      }
+    ]
+  },
+  {
+    "start": 34.9,
+    "end": 35.96,
+    "text": "På en nødvendig måte.",
+    "words": [
+      {
+        "word": "På",
+        "start": 34.9,
+        "end": 34.98
+      },
+      {
+        "word": "en",
+        "start": 34.98,
+        "end": 35.04
+      },
+      {
+        "word": "nødvendig",
+        "start": 35.04,
+        "end": 35.24
+      },
+      {
+        "word": "måte.",
+        "start": 35.24,
+        "end": 35.96
+      }
+    ]
+  },
+  {
+    "start": 36.18,
+    "end": 36.78,
+    "text": "Og finner ut hva som er videre.",
+    "words": [
+      {
+        "word": "Og",
+        "start": 36.18,
+        "end": 36.24
+      },
+      {
+        "word": "finner",
+        "start": 36.24,
+        "end": 36.34
+      },
+      {
+        "word": "ut",
+        "start": 36.34,
+        "end": 36.46
+      },
+      {
+        "word": "hva",
+        "start": 36.46,
+        "end": 36.58
+      },
+      {
+        "word": "som",
+        "start": 36.58,
+        "end": 36.7
+      },
+      {
+        "word": "er",
+        "start": 36.7,
+        "end": 36.72
+      },
+      {
+        "word": "videre.",
+        "start": 36.72,
+        "end": 36.78
+      }
+    ]
+  },
+  {
+    "start": 36.92,
+    "end": 37.62,
+    "text": "Legger på tekst.",
+    "words": [
+      {
+        "word": "Legger",
+        "start": 36.92,
+        "end": 37.06
+      },
+      {
+        "word": "på",
+        "start": 37.06,
+        "end": 37.16
+      },
+      {
+        "word": "tekst.",
+        "start": 37.16,
+        "end": 37.62
+      }
+    ]
+  },
+  {
+    "start": 37.76,
+    "end": 39.16,
+    "text": "Poste den på sosial media for meg.",
+    "words": [
+      {
+        "word": "Poste",
+        "start": 37.76,
+        "end": 38.04
+      },
+      {
+        "word": "den",
+        "start": 38.04,
+        "end": 38.08
+      },
+      {
+        "word": "på",
+        "start": 38.08,
+        "end": 38.2
+      },
+      {
+        "word": "sosial",
+        "start": 38.2,
+        "end": 38.48
+      },
+      {
+        "word": "media",
+        "start": 38.48,
+        "end": 38.7
+      },
+      {
+        "word": "for",
+        "start": 38.7,
+        "end": 38.96
+      },
+      {
+        "word": "meg.",
+        "start": 38.96,
+        "end": 39.16
+      }
+    ]
+  },
+  {
+    "start": 39.36,
+    "end": 39.94,
+    "text": "Det er det som tanker innom.",
+    "words": [
+      {
+        "word": "Det",
+        "start": 39.36,
+        "end": 39.44
+      },
+      {
+        "word": "er",
+        "start": 39.44,
+        "end": 39.44
+      },
+      {
+        "word": "det",
+        "start": 39.44,
+        "end": 39.5
+      },
+      {
+        "word": "som",
+        "start": 39.5,
+        "end": 39.6
+      },
+      {
+        "word": "tanker",
+        "start": 39.6,
+        "end": 39.82
+      },
+      {
+        "word": "innom.",
+        "start": 39.82,
+        "end": 39.94
+      }
+    ]
+  },
+  {
+    "start": 40.06,
+    "end": 41.58,
+    "text": "Så hvis videoen her ser bra ut.",
+    "words": [
+      {
+        "word": "Så",
+        "start": 40.06,
+        "end": 40.18
+      },
+      {
+        "word": "hvis",
+        "start": 40.18,
+        "end": 40.36
+      },
+      {
+        "word": "videoen",
+        "start": 40.36,
+        "end": 40.74
+      },
+      {
+        "word": "her",
+        "start": 40.74,
+        "end": 40.98
+      },
+      {
+        "word": "ser",
+        "start": 40.98,
+        "end": 41.14
+      },
+      {
+        "word": "bra",
+        "start": 41.14,
+        "end": 41.32
+      },
+      {
+        "word": "ut.",
+        "start": 41.32,
+        "end": 41.58
+      }
+    ]
+  },
+  {
+    "start": 41.8,
+    "end": 42.16,
+    "text": "Så vet jeg ikke.",
+    "words": [
+      {
+        "word": "Så",
+        "start": 41.8,
+        "end": 41.88
+      },
+      {
+        "word": "vet",
+        "start": 41.88,
+        "end": 41.98
+      },
+      {
+        "word": "jeg",
+        "start": 41.98,
+        "end": 42.0
+      },
+      {
+        "word": "ikke.",
+        "start": 42.0,
+        "end": 42.16
+      }
+    ]
+  },
+  {
+    "start": 42.28,
+    "end": 43.58,
+    "text": "Jeg som Bluedofacrets, da er det å ha inn.",
+    "words": [
+      {
+        "word": "Jeg",
+        "start": 42.28,
+        "end": 42.34
+      },
+      {
+        "word": "som",
+        "start": 42.34,
+        "end": 42.4
+      },
+      {
+        "word": "Bluedofacrets,",
+        "start": 42.4,
+        "end": 42.88
+      },
+      {
+        "word": "da",
+        "start": 42.96,
+        "end": 43.08
+      },
+      {
+        "word": "er",
+        "start": 43.08,
+        "end": 43.18
+      },
+      {
+        "word": "det",
+        "start": 43.18,
+        "end": 43.26
+      },
+      {
+        "word": "å",
+        "start": 43.26,
+        "end": 43.38
+      },
+      {
+        "word": "ha",
+        "start": 43.38,
+        "end": 43.46
+      },
+      {
+        "word": "inn.",
+        "start": 43.46,
+        "end": 43.58
+      }
+    ]
+  },
+  {
+    "start": 44.18,
+    "end": 46.4,
+    "text": "For jeg tog bare nettopp telefonen og skulle sjekke om det funger.",
+    "words": [
+      {
+        "word": "For",
+        "start": 44.18,
+        "end": 44.3
+      },
+      {
+        "word": "jeg",
+        "start": 44.3,
+        "end": 44.46
+      },
+      {
+        "word": "tog",
+        "start": 44.46,
+        "end": 44.72
+      },
+      {
+        "word": "bare",
+        "start": 44.72,
+        "end": 44.88
+      },
+      {
+        "word": "nettopp",
+        "start": 44.88,
+        "end": 45.18
+      },
+      {
+        "word": "telefonen",
+        "start": 45.18,
+        "end": 45.68
+      },
+      {
+        "word": "og",
+        "start": 45.68,
+        "end": 45.74
+      },
+      {
+        "word": "skulle",
+        "start": 45.74,
+        "end": 45.9
+      },
+      {
+        "word": "sjekke",
+        "start": 45.9,
+        "end": 46.1
+      },
+      {
+        "word": "om",
+        "start": 46.1,
+        "end": 46.18
+      },
+      {
+        "word": "det",
+        "start": 46.18,
+        "end": 46.24
+      },
+      {
+        "word": "funger.",
+        "start": 46.24,
+        "end": 46.4
+      }
+    ]
+  },
+  {
+    "start": 46.58,
+    "end": 47.12,
+    "text": "Nice, ok.",
+    "words": [
+      {
+        "word": "Nice,",
+        "start": 46.58,
+        "end": 46.84
+      },
+      {
+        "word": "ok.",
+        "start": 46.96,
+        "end": 47.12
+      }
+    ]
+  },
+  {
+    "start": 47.34,
+    "end": 47.54,
+    "text": "Ha det bra.",
+    "words": [
+      {
+        "word": "Ha",
+        "start": 47.34,
+        "end": 47.4
+      },
+      {
+        "word": "det",
+        "start": 47.4,
+        "end": 47.46
+      },
+      {
+        "word": "bra.",
+        "start": 47.46,
+        "end": 47.54
+      }
+    ]
+  }
+]
