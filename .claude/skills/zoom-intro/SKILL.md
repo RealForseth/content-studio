@@ -17,78 +17,52 @@ A punchy zoom intro that starts zoomed in at 250% with heavy motion blur and dec
 
 ## Remotion Implementation
 
-### The Easing Curve (matches Premiere Pro velocity curves)
+### The Technique (v3 — proven, looks great)
 
-From the reference: -271.9/sec velocity at start → 0.0/sec at landing.
+NOT using @remotion/motion-blur (too slow, wrong look). Instead: **layered ghost copies + chromatic aberration + heavy vignette**.
 
+### Easing Curve
 ```jsx
-// Quintic ease-out — aggressive start, gentle landing
-const zoomEase = (t) => 1 - Math.pow(1 - t, 5);
+// Sextic ease-out — extremely aggressive start, ultra smooth landing
+const zoomEase = (t) => 1 - Math.pow(1 - t, 6);
 ```
 
 ### Core Parameters
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
-| Start scale | 2.5 (250%) | How zoomed in at the start |
+| Start scale | 2.8 (280%) | How zoomed in at the start |
 | End scale | 1.0 (100%) | Normal view |
-| Duration | 60 frames (2 sec at 30fps) | How long the zoom takes |
-| transformOrigin | "50% 45%" | Slightly above center (face position) |
-| shutterAngle | 360 | Maximum motion blur |
-| samples | 10 | Motion blur quality (more = smoother but slower to render) |
+| Duration | 30 frames (1 sec at 30fps) | Fast! |
+| transformOrigin | "50% 40%" | Slightly above center (face) |
+| Ghost layers | 8 | For radial zoom blur streaks |
+| Chromatic offset | 12px → 0px | RGB split during motion |
+| Vignette | 0.85 → 0.2 | Very heavy at start |
 
-### Using with @remotion/motion-blur
+### Effect Layers (bottom to top)
 
-```jsx
-import { CameraMotionBlur } from "@remotion/motion-blur";
+1. **Radial zoom blur ghosts** — 8 copies at increasing scale + blur, low opacity. Creates directional streaks.
+2. **Chromatic aberration RED** — video shifted left, red tinted, screen blend
+3. **Chromatic aberration BLUE** — video shifted right, blue tinted, screen blend
+4. **Main video** — scaled with gaussian blur + brightness boost
+5. **Heavy vignette** — radial gradient, nearly black corners at start
+6. **Warm tint** — subtle warm overlay during motion
 
-// Wrap your zooming content in CameraMotionBlur
-<CameraMotionBlur shutterAngle={360} samples={10}>
-  <YourZoomingContent />
-</CameraMotionBlur>
-```
+### Working Reference
 
-Inside `YourZoomingContent`, apply the scale transform:
+See `remotion/src/ZoomIntroReal.jsx` — production-ready component that implements all 6 layers.
 
-```jsx
-const frame = useCurrentFrame();
-const zoomDuration = 60;
-const zoomProgress = Math.min(frame / zoomDuration, 1);
-const easedProgress = 1 - Math.pow(1 - zoomProgress, 5); // quintic ease-out
-const scale = interpolate(easedProgress, [0, 1], [2.5, 1]);
-
-<div style={{
-  transform: `scale(${scale})`,
-  transformOrigin: "50% 45%",
-}}>
-  {/* Your video or content here */}
-</div>
-```
-
-### With an Actual Video (OffthreadVideo)
+### Usage with Your Video
 
 ```jsx
-import { OffthreadVideo, staticFile } from "remotion";
-
-<div style={{
-  transform: `scale(${scale})`,
-  transformOrigin: "50% 45%",
-}}>
-  <OffthreadVideo
-    src={staticFile("my-video.mp4")}
-    style={{ width: "100%", height: "100%", objectFit: "cover" }}
-  />
-</div>
+// Just change the video source in ZoomIntroReal.jsx:
+<OffthreadVideo src={staticFile("your-video.mp4")} style={videoStyle} />
 ```
-
-### Reference Composition
-
-A working example is at `remotion/src/ZoomIntro.jsx` in the matt-gray-demo project. It uses a stickfigure placeholder but the zoom + motion blur logic is production-ready.
 
 ## Important Notes
 
-- **Always re-encode video to constant 30fps** before using in Remotion
-- **Always use OffthreadVideo**, never Video component
-- **@remotion/motion-blur must be installed:** `npm install @remotion/motion-blur`
-- **Rendering is slower** with motion blur (10 samples = 10x render per frame). Reduce samples to 5 for faster preview.
-- **transformOrigin** should be where the subject's face is — "50% 45%" works for center-frame talking head
+- **Re-encode to constant 30fps** before Remotion
+- **Use OffthreadVideo**, never Video
+- **transformOrigin** = where the face is (adjust Y% for your framing)
+- **No @remotion/motion-blur needed** — the ghost layer technique is faster and looks more like Premiere
+- Renders fast since it's pure CSS transforms + filters
