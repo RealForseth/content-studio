@@ -131,13 +131,13 @@ ffmpeg -i music.mp3 -ss START_SECONDS -to END_SECONDS -c copy music_clip.mp3
 
 ### API Fallback Chain
 
-If one API is down, try the next:
-1. **Gemini 2.5 Flash** (beta.vertexapis.com) — primary for audio/video
-2. **Gemini 3 Pro** (api.claude.gg) — backup (may return empty)
-3. **GPT-5.3 Codex** (codex.claude.gg) — text-only, describe what you need
-4. **Sonar Pro** (perplexity.claude.gg) — web search, always works
+If one API is down, try the next. All via beta.vertexapis.com:
+1. **Gemini 3.1 Pro Preview** — best quality, deepest analysis
+2. **Gemini 2.5 Pro** — backup, strong reasoning
+3. **Gemini 2.5 Flash** — fast, reliable fallback
+4. **Sonar Pro** (perplexity.claude.gg) — web search, always works for text
 
-Always test with a simple request first. If empty response, move to next.
+Do NOT use api.claude.gg for Gemini (returns empty). Always use beta.vertexapis.com.
 
 ### Step 5: Mix Audio
 

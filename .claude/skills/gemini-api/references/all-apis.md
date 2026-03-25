@@ -4,7 +4,9 @@ Same API key works across all services: from .env `GEMINI_API_KEY`
 
 ## 1. Gemini (Video + Image Analysis + Generation)
 - **Base URL:** `https://beta.vertexapis.com/v1beta/models`
-- **Best models:** gemini-2.5-flash (reliable), gemini-3.1-pro-preview (deep), gemini-3.1-flash-image-preview (image gen)
+- **Priority order:** gemini-3.1-pro-preview (BEST, use first) → gemini-2.5-pro (backup) → gemini-2.5-flash (fast fallback)
+- **Image gen:** gemini-3.1-flash-image-preview, gemini-3-pro-image-preview
+- **DO NOT use api.claude.gg for Gemini** (returns empty responses)
 - **Can do:** Analyze WHOLE video files, generate images, text, audio transcription
 - **Gotchas:** Always `"role": "user"`, always `User-Agent` header, use `requests` not `urllib`
 
@@ -33,7 +35,7 @@ Same API key works across all services: from .env `GEMINI_API_KEY`
 
 | Task | Use This |
 |------|----------|
-| Analyze a video | Gemini 2.5 Flash or 3.1 Pro |
+| Analyze a video | Gemini 3.1 Pro (first) → 2.5 Pro → 2.5 Flash |
 | Generate an image | Gemini 3-Pro Image or 3.1 Flash Image |
 | Research trending topics | Sonar Pro |
 | Write/fix code fast | GPT-5.3 Codex or Codex CLI |
