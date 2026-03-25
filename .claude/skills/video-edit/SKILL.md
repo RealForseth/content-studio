@@ -59,10 +59,13 @@ segments, info = model.transcribe("video.mp4", language="no", word_timestamps=Tr
 
 Save ALL word-level timestamps. These are the ground truth for subtitle timing.
 
-**NOTE: Johannes has a trøndersk (Trondheim) dialect.** Whisper often mishears dialect words. Common corrections needed:
-- Trøndersk pronunciation vs bokmål spelling
-- English loanwords mixed into Norwegian speech
-- Technical terms (AI, Slack, etc.)
+**NOTE: Johannes speaks trøndersk dialect but subtitles must be written in BOKMÅL.**
+Whisper hears the dialect pronunciation and often transcribes it wrong. The Gemini text correction step (or manual review) must convert dialect transcription → standard bokmål spelling. Examples:
+- "æ" (trøndersk for "jeg") → write "jeg"
+- "kåssen" → "hvordan"
+- "namn" → "navn"
+- English loanwords mixed into Norwegian speech stay as-is (content creation, AI, etc.)
+- Technical terms (AI, Slack, etc.) stay as-is
 
 ---
 
